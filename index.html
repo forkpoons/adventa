@@ -47,7 +47,7 @@
         <div class="container hero">
             <div class="align-self-center">
             <h1>АДВЕНТА — АГЕНСТВО <br>СОДЕЙСТВИЯ БИЗНЕСУ</h1>
-            <p>Бухгалтерские услуги &nbsp Сертификация $nbsp Юридическая помощь</p>
+            <p>Бухгалтерские услуги &nbsp; Сертификация &nbsp; Юридическая помощь</p>
             <h3>АДВЕНТА АСБ — КОМАНДА ВАШЕГО УСПЕХА</h3>
             <button type="button" class="btn btn-primary">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
@@ -270,7 +270,7 @@
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4">ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ</h5>
                     <h5 class="bg-green pt-3 pb-3">от 1 000 руб</h5>
-                    <button type="button" class="btn btn-primary m-5 mt-4">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
                 </div>
             </div>
             <div class="col">
@@ -418,7 +418,7 @@
         <div class="container color-white">
             <div class="row">
                 <div class="col">
-                    <img src="img/logo.png">
+                    <img src="img/logo.png" alt="">
                     <h6 class="mt-4">Агентство содействия бизнесу</h6>
                     <small>г. Томск, 2018 г.</small>
                     <a href="#" class="color-white d-block">Политика кофиденциальности</a>
@@ -434,7 +434,78 @@
                 <div class="col border-left">
                     <h5>Остались Вопросы?</h5>
                     Просто оставьте заявку, и наш специалист проконсультирует вас
-                    <button type="button" class="btn btn-primary m-5 mt-4">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="consultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-5 text-center border-dark">
+                <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
+                <form>
+                    <input type="text" placeholder="Ваше имя" class="form-control mt-4">
+                    <input type="tel" placeholder="Ваш телефон" class="form-control mt-4">
+                    <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
+                    <div class="custom-control custom-checkbox mt-2">
+                        <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Согласие на обработку <a href="#" class="text-dark">Персональных данных</a> </label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Accounting-services" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-5 text-center border-dark">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Разворачиваемая панель #1
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Разворачиваемая панель #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Разворачиваемая панель #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
