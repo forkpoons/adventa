@@ -1,0 +1,111 @@
+body, h1, h2, h3 {
+    font-family: 'Roboto', serif;
+}
+.header{
+    background: linear-gradient(0deg, #3FB24C 0%, #4AB852 30.64%, #BAF191  100%) !important;
+    height: 88px;
+    color: white;
+    font-size: 18px;
+}
+.nav-phone{
+    color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 11px 30px;
+    font-family: 'Roboto', serif;
+    Font-Size: 20px;
+    Line-Height: 29px;
+}
+.index{
+    background: #FFD8B2 url("../img/hero.png") no-repeat bottom;
+    background-size: cover;
+    background-position-y:70px;
+    padding: 0;
+    height:100vh;
+}
+.hero{
+    margin-top: 10%;
+}
+.hero p{
+    margin: 20px 0;
+}
+.hero h3{
+    margin: 50px 0;
+}
+.hero h1, .hero h2, .hero h3{
+    color: #257A3C;
+    font-family: 'Roboto', serif;
+}
+h1{
+    font-size: 52px;
+}
+.btn-primary{background: #3FB24C}
+.btn-primary:hover{background: #3FB24C}
+.btn-primary:not(:disabled):not(.disabled):active{background: #257A3C}
+.btn-light{background: white}
+.btn-light:hover{background: white}
+.btn-light:not(:disabled):not(.disabled):active{background: #dddddd}
+.about{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bg-pick{
+    color:black;
+    background: rgba(255, 216, 178, 0.4);
+}
+.bg-green{
+    background: #BAF191;
+}
+.br-dark{
+    background: #595959;
+}
+.color-green{
+    color: #3FB24C;
+}
+.color-white{
+    color:white;
+}
+.request{
+    background: radial-gradient(361.96px at 50% 50%, rgba(72, 204, 87, 0.8) 0%, #48CC57 100%);
+    color: white;
+
+}
+.request .container{
+    background: url("../img/request.png") no-repeat center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.request .form-control{
+    background: none;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+.request button{
+    margin-top: 20px;
+}
+.request .form-control::placeholder{
+    color:white;
+}
+.request a{
+    color: white;
+    text-decoration:underline
+}
+.request label{
+    font-size: 14px;
+}
+.advantages{
+    background-image: url("../img/calc.png");
+}
+.sert{
+    background-image: url("../img/sert.png");
+}
+li{
+    padding-left: 0;
+}
+.spec{
+    height:150px;
+}
+.map img{
+    width: 30px;
+}
