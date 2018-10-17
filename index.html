@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Adventa</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
@@ -11,22 +12,28 @@
     <div class="container-fluid d-inline-block index">
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light p-0 ">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+                <div class="container ">
+                    <a class="navbar-brand ml-5" href="index.html"><img src="img/logo.png" alt=""></a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon color-white"></span>
                     </button>
-                    <div class="collapse navbar-collapse navbar-expand-md pb-5 pb-md-0" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse navbar-expand-md pb-5 pb-lg-0 zindex-tooltip" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto nav-dropdown">
                             <li class="nav-item ml-5 ml-lg-0">
                                 <a class="nav-link mt-4" href="#about">о нас</a>
                             </li>
+                            <li class="nav-item ml-5 ml-lg-0 nav-s">
+                                <a class="nav-link mt-4" href="#servis">бухгалтерские услуги</a>
+                            </li>
+                            <li class="nav-item ml-5 ml-lg-0 nav-s">
+                                <a class="nav-link mt-4" href="#sertificat">услуги по сертификации</a>
+                            </li>
                             <li class="nav-item ml-5 ml-lg-0">
                                 <a class="nav-link mt-4" href="#block1">с нами выгодно</a>
                             </li>
-                            <li class="nav-item dropdown  ml-5 ml-lg-0" style="padding: -10px">
-                                <a class="nav-link dropdown-toggle mt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown ml-5 ml-lg-0 nav-l" style="padding: -10px">
+                                <a class="nav-link dropdown-toggle mt-4" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     наши услуги
                                 </a>
                                 <ul class="dropdown-menu multi-column columns-2 bg-green border-0">
@@ -51,12 +58,11 @@
                             <li class="nav-item ml-5 ml-lg-0">
                                 <a class="nav-link mt-4" href="#block2">контакты</a>
                             </li>
-                        </ul> <div class="nav-phone ml-5 ml-lg-0 ">
-                        8-987-654-32-10
+                        </ul>
+                        <div class="nav-phone mr-5 ">
+                            8-987-654-32-10
+                        </div>
                     </div>
-
-                    </div>
-
                 </div>
             </nav>
         </div>
@@ -120,11 +126,348 @@
         </div>
     </div>
 
+    <!--БУХГАЛТЕРСКИЕ УСЛУГИ мобильныя версия-->
+    <div class="container text-center pt-5 pb-5 disp-m px-0" id="servis-m">
+        <h2><span class="color-green">БУХГАЛТЕРСКИЕ</span> УСЛУГИ</h2>
+        <div class="accordion bg-white text-left" id="accordion-m1">
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m1">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m1" role="button" aria-expanded="false" aria-controls="collapse-m1">
+                            <div class="col-7">
+                                ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
+                            </div>
+                            <div class="col">
+                                от 1 000 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+
+                <div id="collapse-m1" class="collapse show" aria-labelledby="heading-m1" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m2">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m2" role="button" aria-expanded="false" aria-controls="collapse-m2">
+                            <div class="col-7">
+                                ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
+                            </div>
+                            <div class="col">
+                                от 500 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-m2" class="collapse" aria-labelledby="heading-m2" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m3">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m3" role="button" aria-expanded="false" aria-controls="collapse-m3">
+                            <div class="col-7">
+                                СОСТАВЛЕНИЕ И ОТПРИВЕКА ОТЧЕТНОСТИ
+                            </div>
+                            <div class="col">
+                                от 200 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-m3" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        <p>- Подготовка и своевременная отправка отчетов в любую инспекцию, фонд социального страхования, пенсионный фонд</p>
+                        <p>- Заказ актов сверок, выписок по лицевым счетам; </p>
+                        <p>- Подготовка справок о состоянии расчетов, отсутствии задолженности, перечне сданных деклараций;</p>
+                        <p>- Заполнение и подготовка нулевой отчетности; - Подготовка и сдача нулевой отчетности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m4">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m4" role="button" aria-expanded="false" aria-controls="collapse-m4">
+                            <div class="col-7">
+                                РЕГИСТРАЦИЯ ООО И ИП
+                            </div>
+                            <div class="col">
+                                от 500 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-m4" class="collapse" aria-labelledby="heading-m4" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m5">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m5" role="button" aria-expanded="false" aria-controls="collapse-m5">
+                            <div class="col-7">
+                                ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА
+                            </div>
+                            <div class="col">
+                                от 2 000 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-m5" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-white" id="heading-m6">
+                    <h5 class="mb-0">
+                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m6" role="button" aria-expanded="false" aria-controls="collapse-m6">
+                            <div class="col-7">
+                                КАДРОВЫЙ УЧЕТ
+                            </div>
+                            <div class="col">
+                                от 350 руб
+                            </div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapse-m6" class="collapse" aria-labelledby="heading-m6" data-parent="#accordion-m1">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+    </div>
+
+    <!--УСЛУГИ ПО СЕРТИФИКАЦИИ мобильныя версия-->
+    <div class="container text-center pt-5 pb-5 disp-m px-0" id="sertificat-m">
+        <h2>УСЛУГИ ПО <span class="color-green">СЕРТИФИКАЦИИ</span></h2>
+        <div class="accordion bg-white text-left" id="accordion-m2">
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m21" role="button" aria-expanded="false" aria-controls="collapse-m21">
+                    <div class="card-header bg-white" id="heading-m21">
+                        <h5 class="row mb-0">
+                             <div class="col-7">
+                                    СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ
+                                </div>
+                                <div class="col">
+                                    от 6 000 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m21" class="collapse show" aria-labelledby="heading-m21" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m22" role="button" aria-expanded="false" aria-controls="collapse-m22">
+                    <div class="card-header bg-white" id="heading-m22">
+                        <h5 class="row mb-0">
+                             <div class="col-7">
+                                    СЕРТИФИКАТ СООТВЕТСТВИЯ
+                                </div>
+                                <div class="col">
+                                    от 10 000 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m22" class="collapse" aria-labelledby="heading-m22" data-parent="#accordion-m2">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-7">Оборудование</div>
+                            <div class="col"> от 25 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Техника (бытовая, электрика)</div>
+                            <div class="col"> от 25 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Игрушки</div>
+                            <div class="col"> от 19 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Одежда</div>
+                            <div class="col"> от 18 000 руб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m23" role="button" aria-expanded="false" aria-controls="collapse-m23">
+                    <div class="card-header bg-white" id="heading-m23">
+                        <h5 class="row mb-0">
+                                <div class="col-7">
+                                    ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
+                                </div>
+                                <div class="col">
+                                    от 6 000 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m23" class="collapse" aria-labelledby="heading-m23" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-7">Оборудование</div>
+                            <div class="col"> от 9 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Техника (бытовая, электрика)</div>
+                            <div class="col"> от 9 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Мебель</div>
+                            <div class="col"> от 10 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Одежда</div>
+                            <div class="col"> от 8 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Упаковка</div>
+                            <div class="col"> от 8 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Посуда</div>
+                            <div class="col"> от 6 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Хозяйственно-бытовые товары</div>
+                            <div class="col"> от 6 000 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Косметика</div>
+                            <div class="col"> от 9 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Пищевая продукция</div>
+                            <div class="col"> от 8 000 руб</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m24" role="button" aria-expanded="false" aria-controls="collapse-m24">
+                    <div class="card-header bg-white" id="heading-m24">
+                    <h5 class="row mb-0">
+                        <div class="col-7">
+                            СВИДЕТЕЛЬСТВОО ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
+                        </div>
+                        <div class="col">
+                            от 24 000 руб
+                        </div>
+                    </h5>
+                </div>
+                </a>
+                <div id="collapse-m24" class="collapse" aria-labelledby="heading-m24" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m25" role="button" aria-expanded="false" aria-controls="collapse-m25">
+                    <div class="card-header bg-white" id="heading-m25">
+                        <h5 class="row mb-0">
+                                <div class="col-7">
+                                    ОТКАЗНОЕ ПИСЬМО
+                                </div>
+                                <div class="col">
+                                    от 10 000 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m25" class="collapse" aria-labelledby="heading-m23" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m26" role="button" aria-expanded="false" aria-controls="collapse-m26">
+                    <div class="card-header bg-white" id="heading-m26">
+                        <h5 class="row mb-0">
+                                <div class="col-7">
+                                    ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
+                                </div>
+                                <div class="col">
+                                    от 15 000 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m26" class="collapse" aria-labelledby="heading-m26" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m27" role="button" aria-expanded="false" aria-controls="collapse-m27">
+                    <div class="card-header bg-white" id="heading-m27">
+                        <h5 class="mb-0 row">
+                                <div class="col-7">
+                                    СЕРТИФИКАЦИЯ МЕНЕДЖМЕНТА
+                                </div>
+                                <div class="col">
+                                    от 12 500 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m27" class="collapse" aria-labelledby="heading-m27" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a class=" p-0 btn-link " data-toggle="collapse" href="#collapse-m28" role="button" aria-expanded="false" aria-controls="collapse-m28">
+                    <div class="card-header bg-white" id="heading-m28">
+                        <h5 class="mb-0 row">
+                                <div class="col-7">
+                                    ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ
+                                </div>
+                                <div class="col">
+                                    от 9 500 руб
+                                </div>
+                        </h5>
+                    </div>
+                </a>
+                <div id="collapse-m28" class="collapse" aria-labelledby="heading-m26" data-parent="#accordion-m2">
+                    <div class="card-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+    </div>
+
     <!--ОСТАВЬТЕ ЗАЯВКУ-->
-    <div class="container-fluid request p-0" >
+    <div class="container-fluid request p-0 disp-none" >
         <div class="cont">
-            <div class="row justify-content-around text-center">
-                <div class="col-lg-4 col-8">
+            <div class="row justify-content-around text-center m-0">
+                <div class=" col-md-5 col-xl-3 col-8">
                     <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
                     <form>
                         <input type="text" placeholder="Ваше имя" class="form-control">
@@ -148,7 +491,7 @@
         <div class="row text-left">
             <div class="col-12 col-md-4  mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-1.png" class="float-left" alt="">
                     </div>
                     <div class="col">
@@ -159,7 +502,7 @@
             </div>
             <div class="col-12 col-md-4  mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-2.png" alt="">
                     </div>
                     <div class="col">
@@ -170,7 +513,7 @@
             </div>
             <div class="col-12 col-md-4  mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-3.png" alt="">
                     </div>
                     <div class="col">
@@ -184,7 +527,7 @@
         <div class="row  text-left">
             <div class="col-12 col-md-4 mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-4.png" alt="">
                     </div>
                     <div class="col">
@@ -195,7 +538,7 @@
             </div>
             <div class="col-12 col-md-4  mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-5.png" alt="">
                     </div>
                     <div class="col">
@@ -206,7 +549,7 @@
             </div>
             <div class="col-12 col-md-4  mt-4">
                 <div class="row">
-                    <div class="col-2 col-md-5 col-lg-3">
+                    <div class="col-3 col-md-5 col-lg-3">
                         <img src="img/icon-6.png" alt="">
                     </div>
                     <div class="col">
@@ -270,7 +613,7 @@
     </div>
 
     <!--ПРЕИМУЩЕСТВА ВЕДЕНИЯ БУХГАЛТЕРСКОГО УЧЕТА У НАС-->
-    <div class="container-fluid advantages ">
+    <div class="container-fluid advantages disp-none">
         <div class="container text-center pt-5 pb-4">
             <h2 class="pt-4"><span class="color-green">ПРЕИМУЩЕСТВА</span> ВЕДЕНИЯ БУХГАЛТЕРСКОГО УЧЕТА У НАС</h2>
             <div class="row justify-content-around mt-5">
@@ -291,7 +634,7 @@
     </div>
 
     <!--БУХГАЛТЕРСКИЕ УСЛУГИ-->
-    <div class="container text-center pt-5 pb-5" id="servis">
+    <div class="container text-center pt-5 pb-5 disp-none" id="servis">
         <h2><span class="color-green">БУХГАЛТЕРСКИЕ</span> УСЛУГИ</h2>
         <div class="row justify-content-around ">
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
@@ -315,7 +658,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4 " style="height: 50px">СОСТАВЛЕНИЕ И ОТПРИВЕКА ОТЧЕТНОСТИ</h5>
-                    <h5 class="bg-green pt-3 pb-3">от 500 руб</h5>
+                    <h5 class="bg-green pt-3 pb-3">от 200 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(3);">
                         ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
                     </button>
@@ -333,7 +676,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4" style="height: 50px">ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА</h5>
-                    <h5 class="bg-green pt-3 pb-3">от 500 руб</h5>
+                    <h5 class="bg-green pt-3 pb-3">от 200 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(5);">
                         ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
                     </button>
@@ -342,7 +685,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4" style="height: 50px">КАДРОВЫЙ УЧЕТ</h5>
-                    <h5 class="bg-green pt-3 pb-3">от 500 руб</h5>
+                    <h5 class="bg-green pt-3 pb-3">от 350 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(6);">
                         ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
                     </button>
@@ -352,7 +695,7 @@
     </div>
 
     <!--ЧТО ДАЕТ СЕРТИФИКАЦИЯ-->
-    <div class="container-fluid sert">
+    <div class="container-fluid sert disp-none">
         <div class="container text-center pt-5 pb-4">
             <h2 class="pt-4">ЧТО ДАЕТ <span class="color-green">СЕРТИФИКАЦИЯ</span></h2>
             <div class="row justify-content-around mt-5">
@@ -373,7 +716,7 @@
     </div>
 
     <!--УСЛУГИ ПО СЕРТИФИКАЦИИ-->
-    <div class="container text-center pt-5 pb-5" id="sertificat">
+    <div class="container text-center pt-5 pb-5 disp-none" id="sertificat">
         <h2>УСЛУГИ ПО <span class="color-green">СЕРТИФИКАЦИИ</span></h2>
         <div class="row justify-content-around">
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
@@ -461,7 +804,7 @@
                     <a href="index.html"><img src="img/logo.png" alt=""></a>
                     <h6 class="mt-4">Агентство содействия<br>бизнесу</h6>
                     <small>г. Томск, 2018 г.</small><br>
-                    <a href="#" class="color-white "><small>Политика кофиденциальности</small></a>
+                    <a href="privacy-policy.html" class="color-white "><small>Политика кофиденциальности</small></a>
                 </div>
                 <div class="col">
                     <a href="#about" class="color-white d-block mt-2">О нас</a>
@@ -506,26 +849,36 @@
                     <div class="card">
 
                         <div class="card-header bg-green p-3 pl-5" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link p-0 " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ
-                                </button>
-                            </h5>
+                            <div class="row">
+                                <div class="col-11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link p-0 " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="union1">
+                                </div>
+                            </div>
                         </div>
 
-                        <div id="collapseOne" class="collapse show bg-white"  aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse bg-white"  aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card">
                                 <div class="card-header bg-white border-0  pl-5" id="heading1">
-                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
                                         <div class="col-8">
                                             СЕРТИФИКАТ СООТВЕТСТВИЯ
                                         </div>
-                                        <div class="col">
+                                        <div class="col-3">
                                             от 10 000 руб
+                                        </div>
+                                        <div class="col">
+                                            <img src="img/Union.png" alt="" id="union4">
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapse1" class="collapse bg-white card-body pl-5 pt-0">
+                                <div id="collapse4" class="collapse bg-white card-body pl-5 pt-0">
                                     <div class="row">
                                         <div class="col-8">Оборудование</div>
                                         <div class="col"> от 25 000 руб</div>
@@ -543,16 +896,19 @@
                             </div>
                             <div class="card">
                                 <div class="card-header bg-white border-0 p-3 pl-5" id="heading2">
-                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
                                         <div class="col-8">
                                             ДЕЛАРАЦИЯ СООТВЕТСТВИЯ
                                         </div>
-                                        <div class="col">
+                                        <div class="col-3">
                                             от 6 000 руб
+                                        </div>
+                                        <div class="col">
+                                            <img src="img/Union.png" alt="" id="union5">
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapse2" class="collapse bg-white card-body pl-5 pt-0">
+                                <div id="collapse5" class="collapse bg-white card-body pl-5 pt-0">
                                     <div class="row">
                                         <div class="col-8">Оборудование</div>
                                         <div class="col"> от 9 500 руб</div>
@@ -633,11 +989,18 @@
                     </div>
                     <div class="card">
                         <div class="card-header bg-green p-3 pl-5" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    СЕРТИФИКАЦИЯ МЕНЕДЖМЕНТА
-                                </button>
-                            </h5>
+                            <div class="row">
+                                <div class="col-11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            СЕРТИФИКАЦИЯ МЕНЕДЖМЕНТА
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="union2">
+                                </div>
+                            </div>
                         </div>
                         <div id="collapseTwo" class="collapse bg-white" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card">
@@ -705,11 +1068,18 @@
                     </div>
                     <div class="card">
                         <div class="card-header bg-green p-3 pl-5" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ
-                                </button>
-                            </h5>
+                            <div class="row">
+                                <div class="col-11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="union3">
+                                </div>
+                            </div>
                         </div>
                         <div id="collapseThree" class="collapse bg-white" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
@@ -756,33 +1126,42 @@
                                 <div class="col-8">
                                     ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
                                 </div>
-                                <div class="col">
+                                <div class="col col-3">
                                     от 1 000 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union1">
+                                </div>
                             </a>
-                            <div id="collapse2-1" class="collapse bg-white card-body pl-5 pt-0" aria-labelledby="heading2-1" data-parent="#accordion-buh">...</div>
+                            <div id="collapse2-1" class="collapse bg-white card-body p-0 " aria-labelledby="heading2-1" data-parent="#accordion-buh">...</div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-2">
                             <a class="row p-0 btn-link "  data-toggle="collapse" href="#collapse2-2" role="button" aria-expanded="false" aria-controls="collapse2-2">
                                 <div class="col-8">
                                     ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
                                 </div>
-                                <div class="col">
+                                <div class="col col-3">
                                     от 500 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union2">
+                                </div>
                             </a>
-                            <div id="collapse2-2" class="collapse bg-white card-body pl-5 pt-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div id="collapse2-2" class="collapse bg-white card-body p-0 " aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-3">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-3" role="button" aria-expanded="false" aria-controls="collapse2-3" >
                                 <div class="col-8">
                                     СОСТАВЛЕНИЕ И ОТПРИВЕКА ОТЧЕТНОСТИ
                                 </div>
-                                <div class="col">
+                                <div class="col col-3">
                                     от 200 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union3">
+                                </div>
                             </a>
-                            <div id="collapse2-3" class="collapse bg-white card-body col-8 pt-2 text-left" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                            <div id="collapse2-3" class="collapse bg-white card-body col-8 p-0 text-left" aria-labelledby="heading2-2" data-parent="#accordion-buh">
                                 <p>- Подготовка и своевременная отправка отчетов в любую инспекцию, фонд социального страхования, пенсионный фонд</p>
                                 <p>- Заказ актов сверок, выписок по лицевым счетам; </p>
                                 <p>- Подготовка справок о состоянии расчетов, отсутствии задолженности, перечне сданных деклараций;</p>
@@ -794,33 +1173,42 @@
                                 <div class="col-8">
                                     РЕГИСТРАЦИЯ ООО И ИП
                                 </div>
-                                <div class="col">
+                                <div class="col col-3">
                                     от 500 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union4">
+                                </div>
                             </a>
-                            <div id="collapse2-4" class="collapse bg-white card-body pl-5 pt-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div id="collapse2-4" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-5">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-5" role="button" aria-expanded="false" aria-controls="collapse2-5" >
                                 <div class="col-8">
                                     ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА
                                 </div>
-                                <div class="col">
+                                <div class="col col-3">
                                     от 2 000 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union5">
+                                </div>
                             </a>
-                            <div id="collapse2-5" class="collapse bg-white card-body pl-5 pt-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div id="collapse2-5" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-6">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-6" role="button" aria-expanded="false" aria-controls="collapse2-6" >
                                 <div class="col-8">
                                     КАДРОВЫЙ УЧЕТ
                                 </div>
-                                <div class="col">
+                                <div class="col-3">
                                     от 350 руб
                                 </div>
+                                <div class="col">
+                                    <img src="img/Union.png" alt="" id="buh-union6">
+                                </div>
                             </a>
-                            <div id="collapse2-6" class="collapse bg-white card-body pl-5 pt-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div id="collapse2-6" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
                         </div>
                     </div>
                     <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
@@ -847,56 +1235,114 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
         function stratification(a){
-            document.getElementById('collapseOne').className='collapse bg-white';
-            document.getElementById('collapseTwo').className='collapse bg-white';
-            document.getElementById('collapseThree').className='collapse bg-white';
             switch (a) {
                 case 1:
-                    document.getElementById('collapseOne').className='collapse bg-white show';
+                    $('#collapseOne').collapse('show');
                     break;
                 case 2:
-                    document.getElementById('collapseTwo').className='collapse bg-white show';
+                    $('#collapseTwo').collapse('show');
                     break;
                 case 3:
-                    document.getElementById('collapseThree').className='collapse bg-white show';
+                    $('#collapseThree').collapse('show');
                     break;
             }
         }
         function stratification2(a){
-            document.getElementById('collapse2-1').className='collapse bg-white';
-            document.getElementById('collapse2-2').className='collapse bg-white';
-            document.getElementById('collapse2-3').className='collapse bg-white';
-            document.getElementById('collapse2-4').className='collapse bg-white';
-            document.getElementById('collapse2-5').className='collapse bg-white';
-            document.getElementById('collapse2-6').className='collapse bg-white';
             switch (a) {
                 case 1:
-                    document.getElementById('collapse2-1').className='collapse bg-white show';
+                    $('#collapse2-1').collapse('show');
                     break;
                 case 2:
-                    document.getElementById('collapse2-2').className='collapse bg-white show';
+                    $('#collapse2-2').collapse('show');
                     break;
                 case 3:
-                    document.getElementById('collapse2-3').className='collapse bg-white show';
+                    $('#collapse2-3').collapse('show');
                     break;
                 case 4:
-                    document.getElementById('collapse2-4').className='collapse bg-white show';
+                    $('#collapse2-4').collapse('show');
                     break;
                 case 5:
-                    document.getElementById('collapse2-5').className='collapse bg-white show';
+                    $('#collapse2-5').collapse('show');
                     break;
                 case 6:
-                    document.getElementById('collapse2-6').className='collapse bg-white show';
+                    $('#collapse2-6').collapse('show');
                     break;
             }
         }
-    </script>
+        $('#collapse2-1').on('show.bs.collapse', function () {
+            document.getElementById('buh-union1').className='rotate';
+        });
+        $('#collapse2-2').on('show.bs.collapse', function () {
+            document.getElementById('buh-union2').className='rotate';
+        });
+        $('#collapse2-3').on('show.bs.collapse', function () {
+            document.getElementById('buh-union3').className='rotate';
+        });
+        $('#collapse2-4').on('show.bs.collapse', function () {
+            document.getElementById('buh-union4').className='rotate';
+        });
+        $('#collapse2-5').on('show.bs.collapse', function () {
+            document.getElementById('buh-union5').className='rotate';
+        });
+        $('#collapse2-6').on('show.bs.collapse', function () {
+            document.getElementById('buh-union6').className='rotate';
+        });
+        $('#collapse2-1').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union1').className='';
+        });
+        $('#collapse2-2').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union2').className='';
+        });
+        $('#collapse2-3').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union3').className='';
+        });
+        $('#collapse2-4').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union4').className='';
+        });
+        $('#collapse2-5').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union5').className='';
+        });
+        $('#collapse2-6').on('hide.bs.collapse', function () {
+            document.getElementById('buh-union6').className='';
+        });
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+        $('#collapseOne').on('show.bs.collapse', function () {
+            document.getElementById('union1').className='rotate';
+        });
+        $('#collapseTwo').on('show.bs.collapse', function () {
+            document.getElementById('union2').className='rotate';
+        });
+        $('#collapseThree').on('show.bs.collapse', function () {
+            document.getElementById('union3').className='rotate';
+        });
+        $('#collapseOne').on('hide.bs.collapse', function () {
+            document.getElementById('union1').className='';
+        });
+        $('#collapseTwo').on('hide.bs.collapse', function () {
+            document.getElementById('union2').className='';
+        });
+        $('#collapseThree').on('hide.bs.collapse', function () {
+            document.getElementById('union3').className='';
+        });
+
+        $('#collapse4').on('show.bs.collapse', function () {
+            document.getElementById('union4').className='rotate';
+        });
+        $('#collapse5').on('show.bs.collapse', function () {
+            document.getElementById('union5').className='rotate';
+        });
+        $('#collapse4').on('hide.bs.collapse', function () {
+            document.getElementById('union4').className='';
+        });
+        $('#collapse5').on('hide.bs.collapse', function () {
+            document.getElementById('union5').className='';
+        });
+    </script>
+    </body>
 </html>
