@@ -1,9 +1,18 @@
-body, h1, h2, h3 {
-    font-family: 'Roboto', serif;
+@font-face{
+    font-family: 'Mplus 1p';
+    src: url('../font/MPLUS1p-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body,h1, h2, h3 {
+    font-family: 'Mplus 1p', serif;
 }
 h1{
     font-size:52px;
     color:#3FB24C;
+}
+.sertificat h5{
+    font-size: 19px;
 }
 .bg-pick{
     color:black;
@@ -102,11 +111,11 @@ a.color-white:hover{
 }
 .nav-phone{
     color:white;
-    width: 210px;
+    width: 240px;
     border: 2px solid white;
     border-radius: 6px;
     padding: 11px 30px;
-    font-family: 'Roboto', serif;
+    font-family: 'Mplus 1p', serif;
     Font-Size: 20px;
     Line-Height: 29px;
 }
@@ -134,7 +143,7 @@ a.color-white:hover{
 }
 .hero h1, .hero h2, .hero h3{
     color: #257A3C;
-    font-family: 'Roboto', serif;
+    font-family: 'Mplus 1p', serif;
 }
 .img-shadow{
     box-shadow:  -30px -20px 0  -5px #ffefe0,
