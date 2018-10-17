@@ -51,6 +51,17 @@ a.color-white:hover{
     text-decoration: none;
     color:black;
 }
+.btn-transparent{
+    background:none;
+    color:#3FB24C;
+    border: 2px solid #3FB24C;
+
+}
+.btn-transparent:hover{
+    background:none;
+    color:#257A3C;
+    border: 2px solid #257A3C;
+}
 .header{
     background: linear-gradient(0deg, #3FB24C 0%, #4AB852 30.64%, #BAF191  100%) !important;
     height: 88px;
@@ -63,6 +74,9 @@ a.color-white:hover{
 .hover-green:hover{
     color:#3FB24C;
     background: #BAF191;
+}
+.navbar{
+    z-index: 1000;
 }
 .navbar .dropdown-header{
     font-size: 18px;
@@ -103,6 +117,12 @@ a.color-white:hover{
     padding: 0;
     height:100vh;
 }
+.index404{
+    background: #f6f0e6 url("../img/404-back.png") 0 100%  no-repeat;
+    background-size: cover;
+    padding: 0;
+    height:100vh;
+}
 .hero{
     margin-top: 10%;
 }
@@ -118,6 +138,10 @@ a.color-white:hover{
 }
 .img-shadow{
     box-shadow:  -30px -20px 0  -5px #ffefe0,
+    -30px -20px 0  0 #FFD8B2;
+}
+.img-shadow-white{
+    box-shadow:  -30px -20px 0  -5px #fff,
     -30px -20px 0  0 #FFD8B2;
 }
 .about{
@@ -170,8 +194,11 @@ li{
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
     background-color:#3FB24C;
 }
-.rotate{;
+.rotate{
     transform: rotate(180deg);
+}
+#servis-m h5{
+    height: 48px;
 }
 @media (min-width: 992px) {
     .buh .modal-dialog {min-width: 950px;}
@@ -180,6 +207,9 @@ li{
     .navbar-expand-md .navbar-nav{
         flex-direction: column;
     }
+    .disp-m{
+        display: none;
+    }
 }
 @media (min-width: 992px){
     .navbar-expand-md .navbar-nav{
@@ -187,6 +217,9 @@ li{
     }
     .nav-dropdown{
         height:88px;
+    }
+    .nav-s{
+        display: none;
     }
 }
 @media (max-width: 1199px) {
@@ -198,14 +231,18 @@ li{
     .navbar .navbar-collapse{
         background: #3FB24C;
     }
-    .navbar .container{
-        max-width: none;
+    #servis-m h5 {
+        height: inherit;
     }
     .nav-phone{
         display: none;
     }
     .dropdown-menu.columns-2{
         left: 0;
+        min-width: 0;
+    }
+    .nav-l{
+        display: none;
     }
     .hero h1{
         font-size: 46px;
@@ -214,9 +251,12 @@ li{
         font-size: 28px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     .disp-none{
         display: none;
+    }
+    .disp-m h5{
+        font-size:18px;
     }
     .how img{
         transform: rotate(90deg);
@@ -225,14 +265,15 @@ li{
         height:520px;
     }
     .hero h1{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .hero p{
+        font-size:12px
     }
     .hero h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .container {
         max-width: none;
     }
-}
-@media (max-width: 576px) {
 }
