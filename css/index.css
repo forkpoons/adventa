@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|M+PLUS+1p|Roboto&subset=cyrillic');
+
 @font-face{
     font-family: 'Mplus 1p';
     src: url('../font/MPLUS1p-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'Mplus 1p';
+    src: url('../font/MPLUS1p-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
 body,h1, h2, h3 {
     font-family: 'Mplus 1p', serif;
+}
+p, .roboto{
+    font-family: Roboto, serif;
 }
 h1{
     font-size:52px;
     color:#3FB24C;
 }
+.upper{
+    text-transform: uppercase;
+}
+.px-main{
+    padding-top:120px;padding-bottom:120px;
+}
 .sertificat h5{
     font-size: 19px;
 }
 .bg-pick{
+    color:black;
+    background: rgba(255, 216, 178, 0.4);
+}
+.bg-pick-map{
     color:black;
     background: rgba(255, 216, 178, 0.4);
 }
@@ -37,28 +58,28 @@ a.color-white:hover{
     color:black;
     text-decoration: none;
 }
-.btn-primary{background: #3FB24C}
-.btn-primary:hover{background: #3FB24C}
-.btn-primary:not(:disabled):not(.disabled):active{background: #257A3C}
-.btn-light{background: white}
-.btn-light:hover{background: white}
-.btn-light:not(:disabled):not(.disabled):active{background: #dddddd}
+.btn-primary{background: #3FB24C;border-color: transparent; padding: 13px 32px;}
+.btn-primary:hover{background: #257A3C;border-color: transparent;}
+.btn-primary:not(:disabled):not(.disabled):active{background: #257A3C;border-color: transparent;}
+.btn-light{background: white;border-color: transparent;padding: 13px 32px;}
+.btn-light:hover{background: white;border-color: transparent;}
+.btn-light:not(:disabled):not(.disabled):active{background: #dddddd;border-color: transparent;}
 .btn-link{
     color:black;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none;border-color: transparent;
 }
 .btn-link:focus, .btn-link.focus{
     color:black;
-    text-decoration: none;
+    text-decoration: none;border-color: transparent;
 }
 .btn-link:hover{
     color:black;
-    text-decoration: none;
+    text-decoration: none;border-color: transparent;
 }
 .btn-link:not(:disabled):not(.disabled):active{
     text-decoration: none;
-    color:black;
+    color:black;border-color: transparent;
 }
 .btn-transparent{
     background:none;
@@ -71,8 +92,35 @@ a.color-white:hover{
     color:#257A3C;
     border: 2px solid #257A3C;
 }
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3FB24C;
+    border-color: #3FB24C;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}.btn-light:focus, .btn-light.focus {
+    box-shadow: none;
+}
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(209, 209, 209, 1);
+    border-color: rgba(75, 219, 89, 1);
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+    box-shadow: none;
+}
 .header{
-    background: linear-gradient(0deg, #3FB24C 0%, #4AB852 30.64%, #BAF191  100%) !important;
+    background: linear-gradient(0deg, #3FB24C 0%, #4AB852  59.37%, #5BC05C  76.24%, #6FCB67  89.5%, #7ED26F  100%) !important;
     height: 88px;
     color: white;
     font-size: 18px;
@@ -84,6 +132,7 @@ a.color-white:hover{
     color:#3FB24C;
     background: #BAF191;
 }
+
 .navbar{
     z-index: 1000;
 }
@@ -120,11 +169,12 @@ a.color-white:hover{
     Line-Height: 29px;
 }
 .index{
-    background: #FFD8B2 url("../img/hero.png") no-repeat bottom;
+    background: #FFD8B2 url("../img/hero.png") no-repeat right;
     background-size: cover;
-    background-position-y:70px;
+    background-position-y:80px;
     padding: 0;
     height:100vh;
+    min-height: 700px;
 }
 .index404{
     background: #f6f0e6 url("../img/404-back.png") 0 100%  no-repeat;
@@ -135,27 +185,40 @@ a.color-white:hover{
 .hero{
     margin-top: 10%;
 }
+.hero404{
+    margin-top: 6%;
+}
 .hero p{
     margin: 20px 0;
 }
 .hero h3{
     margin: 50px 0;
 }
+
 .hero h1, .hero h2, .hero h3{
     color: #257A3C;
     font-family: 'Mplus 1p', serif;
 }
+.font-medium{
+    font-weight:500;
+}
+.hero h1{
+    background: url(../img/back-text.jpg) no-repeat center left;
+    background-size: cover;
+    color: #fff;
+    font-weight:500;
+    /* -webkit-background-clip обрезает фон элемента по контуру текста */
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.2); /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
+    -webkit-background-clip: text;
+}
 .img-shadow{
     box-shadow:  -30px -20px 0  -5px #ffefe0,
     -30px -20px 0  0 #FFD8B2;
+    margin-top: 30px;
 }
 .img-shadow-white{
     box-shadow:  -30px -20px 0  -5px #fff,
     -30px -20px 0  0 #FFD8B2;
-}
-.about{
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 .request{
     background: radial-gradient(361.96px at 50% 50%, rgba(72, 204, 87, 0.8) 0%, #48CC57 100%);
@@ -191,6 +254,9 @@ a.color-white:hover{
 .sert{
     background-image: url("../img/sert.png");
 }
+.sert-m h5{
+    font-size:14px !important;
+}
 li{
     padding-left: 0;
 }
@@ -208,6 +274,10 @@ li{
 }
 #servis-m h5{
     height: 48px;
+}
+.footer{
+    padding-top: 80px;
+
 }
 @media (min-width: 992px) {
     .buh .modal-dialog {min-width: 950px;}
@@ -235,6 +305,9 @@ li{
     .request .cont{
         background-size: cover;
     }
+    .header{
+        font-size: 14px;
+    }
 }
 @media (max-width: 991px){
     .navbar .navbar-collapse{
@@ -259,6 +332,9 @@ li{
     .hero h3{
         font-size: 28px;
     }
+    .disp-none-img{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .disp-none{
@@ -272,6 +348,10 @@ li{
     }
     .index{
         height:520px;
+        min-height: 0;
+    }
+    .text-center-md{
+        text-align: center;
     }
     .hero h1{
         font-size: 30px;
@@ -284,5 +364,17 @@ li{
     }
     .container {
         max-width: none;
+    }
+
+    .footer .border-left{
+        border-left: 0 !important;
+        border-top: 1px solid white;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .bg-pick-map{
+        color:black;
+        background: white;
     }
 }

@@ -6,167 +6,242 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script>
+        var map;
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [ 56.505262,85.018929],
+                zoom: 16
+
+
+            });
+            DG.marker([56.505269, 85.017935]).addTo(map).bindPopup('Иркутский тракт, 53Б');
+        });
+    </script>
 </head>
 <body>
-<div class="container-fluid d-inline-block p-0 m-0">
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light p-0 ">
-            <div class="container ">
-                <a class="navbar-brand ml-5" href="index.html"><img src="img/logo.png" alt=""></a>
+    <div class="container-fluid d-inline-block p-0 m-0">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light p-0 ">
+                <div class="container ">
+                    <a class="navbar-brand ml-5" href="index.html"><img src="img/logo.png" alt=""></a>
 
-                <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon color-white"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar-expand-md pb-5 pb-lg-0 zindex-tooltip" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto nav-dropdown">
-                        <li class="nav-item ml-5 ml-lg-0">
-                            <a class="nav-link mt-4" href="index.html#about">о нас</a>
-                        </li>
-                        <li class="nav-item ml-5 ml-lg-0 nav-s">
-                            <a class="nav-link mt-4" href="index.html#servis">бухгалтерские услуги</a>
-                        </li>
-                        <li class="nav-item ml-5 ml-lg-0 nav-s">
-                            <a class="nav-link mt-4" href="index.html#sertificat">услуги по сертификации</a>
-                        </li>
-                        <li class="nav-item ml-5 ml-lg-0">
-                            <a class="nav-link mt-4" href="index.html#block1">с нами выгодно</a>
-                        </li>
-                        <li class="nav-item dropdown ml-5 ml-lg-0 nav-l" style="padding: -10px">
-                            <a class="nav-link dropdown-toggle mt-4" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                наши услуги
-                            </a>
-                            <ul class="dropdown-menu multi-column columns-2 bg-green border-0">
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <h3 class="dropdown-header hover-green"><a class="hover-green" href="index.html#servis">БУХГАЛТЕРСКИЕ УСЛУГИ</a></h3>
-                                        <a class="dropdown-item hover-green" href="index.html#servis">Ведение бухгалтерского и<br> налогового учета ЮЛ и ИП</a>
-                                        <a class="dropdown-item hover-green" href="index.html#servis">Составление и отправка отчетности</a>
-                                        <a class="dropdown-item hover-green" href="index.html#servis">Регистрация ООО и ИП</a>
-                                        <a class="dropdown-item hover-green" href="index.html#servis">Восстановление бухгалтерского учета</a>
-                                        <a class="dropdown-item hover-green" href="index.html#servis">Кадровый учет</a>
+                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon color-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-expand-md pb-5 pb-lg-0 zindex-tooltip" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto nav-dropdown">
+                            <li class="nav-item ml-5 ml-lg-0">
+                                <a class="nav-link mt-4" href="#about">О НАС</a>
+                            </li>
+                            <li class="nav-item ml-5 ml-lg-0 nav-s">
+                                <a class="nav-link mt-4" href="#servis">БУХГАЛТЕРСКИЕ УСЛУГИ</a>
+                            </li>
+                            <li class="nav-item ml-5 ml-lg-0 nav-s">
+                                <a class="nav-link mt-4" href="#sertificat">УСЛУГИ ПО СЕРТИФИКАЦИИ</a>
+                            </li>
+                            <li class="nav-item ml-5 ml-lg-0">
+                                <a class="nav-link mt-4" href="#block1">С НАМИ ВЫГОДНО</a>
+                            </li>
+                            <li class="nav-item dropdown ml-5 ml-lg-0 nav-l" style="padding: -10px">
+                                <a class="nav-link dropdown-toggle mt-4" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    НАШИ УСЛУГИ
+                                </a>
+                                <ul class="dropdown-menu multi-column columns-2 bg-green border-0">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <h3 class="dropdown-header hover-green "><a class="hover-green" href="#servis">БУХГАЛТЕРСКИЕ УСЛУГИ</a></h3>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Ведение бухгалтерского и<br> налогового учета ЮЛ и ИП</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Составление и отправка отчетности</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Регистрация ООО и ИП</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Восстановление бухгалтерского учета</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Кадровый учет</a>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <h3 class="dropdown-header hover-green"><a class="hover-green" href="#sertificat">УСЛУГИ ПО СЕРТИФИКАЦИИ</a></h3>
+                                            <a class="dropdown-item hover-green lato" href="#sertificat">Сертификация и декларация</a>
+                                            <a class="dropdown-item hover-green lato" href="#sertificat">Сертификация менеджмента</a>
+                                            <a class="dropdown-item hover-green lato" href="#sertificat">Техническая документация</a>
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <h3 class="dropdown-header hover-green"><a class="hover-green" href="index.html#sertificat">УСЛУГИ ПО СЕРТИФИКАЦИИ</a></h3>
-                                        <a class="dropdown-item hover-green" href="index.html#sertificat">Сертификация и декларация</a>
-                                        <a class="dropdown-item hover-green" href="index.html#sertificat">Сертификация менеджмента</a>
-                                        <a class="dropdown-item hover-green" href="index.html#sertificat">Техническая документация</a>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="nav-item ml-5 ml-lg-0">
-                            <a class="nav-link mt-4" href="index.html#block2">контакты</a>
-                        </li>
-                    </ul>
-                    <div class="nav-phone mr-5 ">
-                        8-987-654-32-10
+                                </ul>
+                            </li>
+                            <li class="nav-item ml-5 ml-lg-0">
+                                <a class="nav-link mt-4" href="#block2">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                        <div class="nav-phone mr-5 ">
+                            8-987-654-32-10
+                        </div>
                     </div>
                 </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <a href="index.html"> <button type="button" class="btn btn-transparent mt-5 px-5 py-2">ВЕРНУТЬСЯ НА САЙТ</button></a>
+            <h2 class="mt-5 upper w-75">Политика организации в отношении обработки персональных данных</h2>
+            <p>Настоящая Политика организации в отношении обработки персональных данных (далее – Политика) действует в отношении всей информации, которую Сайт, расположенный на доменном имени  asbadventa.ru  (далее – Доменное имя), может получить о Пользователе во время использования Сайта.</p>
+            <p>Настоящая Политика разработана с учетом требований Конституции Российской Федерации, законодательных и иных нормативных правовых актов Российской Федерации в области персональных данных.</p>
+            <p>Положения Политики служат основой для разработки локальных нормативных актов, регламентирующих вопросы обработки персональных данных.</p>
+
+            <h6 class="color-green upper mt-5">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</h6>
+            <p>1.1 В настоящей Политике используются следующие термины:</p>
+            <p>1.1.1. «Администрация Сайта asbadventa.ru» (далее – «Администрация Сайта) – уполномоченные сотрудники на управление Сайтом, действующие от имени Общества с ограниченной ответственностью «Адвента – агентство содействия бизнесу», находящегося по адресу г. Томск, ул. 5-ой Армии, 1А, кв. 5, которое организуют и (или) осуществляют обработку персональных данных, а также определяют цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</p>
+            <p>1.1.2. «Персональные данные» - любая информация, относящаяся прямо или косвенно к определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+            <p>1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</p>
+            <p>1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.</p>
+            <p>1.1.5. «Пользователь Сайта asbadventa.ru» (далее – Пользователь) – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт asbadventa.ru.</p>
+            <p>1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего Сайта.</p>
+            <p>1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.</p>
+            <p>1.1.8. Сайт - совокупность визуально воспринимаемых html страниц и сервисов, размещенных в сети Интернет по уникальному адресу (доменному имени).</p>
+
+            <h6 class="color-green upper mt-5">2. ОБЩИЕ ПОЛОЖЕНИЯ</h6>
+            <p>2.1. Использование Пользователем Сайта asbadventa.ru означает согласие с настоящей Политикой и условиями обработки персональных данных Пользователя.</p>
+            <p>2.2. Если Пользователь не согласен с условиями настоящей политики и не дает согласие на обработку персональных данных, он должен покинуть Сайт.</p>
+            <p>2.3.Настоящая Политика применяется только к Сайту asbadventa.ru.</p>
+            <p>2.4. Администрация Сайта не проверяет достоверность персональных данных, предоставляемых Пользователем Сайта asbadventa.ru.</p>
+
+            <h6 class="color-green upper mt-5">3. ПРЕДМЕТ ПОЛИТИКИ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h6>
+            <p>3.1. Настоящая Политика устанавливает обязательства Администрации Сайта asbadventa.ru по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет при заполнении соответствующих полей форм.</p>
+            <p>3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики, предоставляются Пользователем путём заполнения форм на Сайте asbadventa.ru и включают в себя следующую информацию:</p>
+            <p>3.2.1. фамилию, имя, отчество, ИНН (при наличии) Пользователя;</p>
+            <p>3.2.2. контактный телефон Пользователя;</p>
+            <p>3.2.3. паспортные данные Пользователя.</p>
+
+            <h6 class="color-green upper mt-5">4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</h6>
+            <p>4.1. Персональные данные Пользователя Администрация Сайта asbadventa.ru может использовать в целях:</p>
+            <p>4.1.1. Идентификации Пользователя;</p>
+            <p>4.1.2. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, рекламной рассылки, оказания юридических и бухгалтерских услуг, обработку запросов и заявок от Пользователя;</p>
+            <p>4.1.3. Уведомления Пользователя;</p>
+            <p>4.1.4. Осуществления рекламной деятельности с согласия Пользователя.</p>
+
+            <h6 class="color-green upper mt-5">5. ПРИНЦИПЫ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h6>
+            <p>5.1. Обработка персональных данных администрацией сайта осуществляется с учетом необходимости обеспечения защиты прав и свобод субъектов персональных данных, в том числе защиты права на неприкосновенность частной жизни, личную и семейную тайну, на основе следующих принципов:</p>
+            <p>5.1.1. обработка персональных данных осуществляется на законной и справедливой основе;</p>
+            <p>5.1.2. обработка персональных данных ограничивается достижением конкретных, заранее определенных и законных целей;</p>
+            <p>5.1.3. не допускается обработка персональных данных, несовместимая с целями сбора персональных данных;</p>
+            <p>5.1.4. не допускается объединение баз данных, содержащих персональные данные, обработка которых осуществляется в целях, несовместимых между собой;</p>
+            <p>5.1.5. содержание и объем обрабатываемых персональных данных соответствует заявленным целям обработки. Не допускается избыточность обрабатываемых персональных данных по отношению к заявленным целям их обработки;</p>
+            <p>5.1.6. обрабатываемые персональные данные уничтожаются либо обезличиваются по достижении целей обработки или в случае утраты необходимости в достижении этих целей, если иное не предусмотрено федеральным законом;</p>
+            <p>5.1.7. Администрация Сайта не обрабатывает персональные данные субъектов персональных данных, которые не дали надлежащее согласие на их обработку. Деятельность Администрации Сайта осуществляется в соответствии с требованиями Российского законодательства о персональных данных.</p>
+
+            <h6 class="color-green upper mt-5">6. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</h6>
+            <p>6.1. Обработка персональных данных Пользователя осуществляется до момента достижения целей обработки, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.</p>
+            <p>6.2. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.</p>
+
+            <h6 class="color-green upper mt-5">7. МЕРЫ, ПРИНИМАЕМЫЕ ПРИ ОБРАБОТКЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h6>
+            <p>7.1. Меры, необходимые и достаточные для обеспечения выполнения требований законодательства Российской Федерации в области персональных данных, включают:</p>
+            <p>7.1.1. Назначение лица, ответственного за организацию обработки персональных данных;</p>
+            <p>7.1.2. принятие локальных нормативных актов и иных документов в области обработки и защиты персональных данных;</p>
+            <p>7.1.3. получение согласий субъектов персональных данных на обработку их персональных данных;</p>
+            <p>7.1.4. обеспечение раздельного хранения персональных данных и их материальных носителей, обработка которых осуществляется в разных целях и которые содержат разные категории персональных данных;</p>
+            <p>7.1.5. хранение материальных носителей персональных данных с соблюдением условий, обеспечивающих сохранность персональных данных и исключающих несанкционированный доступ к ним;</p>
+            <p>7.1.6. осуществление внутреннего контроля соответствия обработки персональных данных Федеральному закону «О персональных данных» и принятым в соответствии с ним нормативным правовым актам, требованиям к защите персональных данных, настоящей Политике, локальным нормативным актам организации;</p>
+            <p>7.1.7. иные меры, предусмотренные законодательством Российской Федерации в области персональных данных.</p>
+            <p>7.2. Меры по обеспечению безопасности персональных данных при их обработке в информационных системах персональных данных устанавливаются в соответствии с локальными нормативными актами, регламентирующими вопросы обеспечения безопасности персональных данных при их обработке в информационных системах персональных данных.</p>
+
+            <h6 class="color-green upper mt-5">8. ОБЯЗАТЕЛЬСТВА СТОРОН</h6>
+            <p>8.1. Пользователь обязан:</p>
+            <p>8.1.1. Предоставить достоверную информацию о персональных данных, необходимую для обработки входящей заявки или заказа Пользователя.</p>
+            <p>8.2. Администрация Сайта обязана:</p>
+            <p>8.2.1. Использовать полученную информацию исключительно для целей, указанных в разделе 4 настоящей Политики.</p>
+            <p>8.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 6.2. настоящей Политики.</p>
+            <p>8.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.</p>
+
+            <h6 class="color-green upper mt-5">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</h6>
+            <p>9.1. Администрация Сайта вправе вносить изменения в настоящую Политику в одностороннем порядке.</p>
+            <p>9.2. Новая Политика вступает в силу с момента ее размещения на Сайте asbadventa.ru, если иное не предусмотрено новой редакцией Политики.</p>
+            <p>9.3. Действующая Политика размещена на Сайте по адресу asbadventa.ru.</p>
+        </div>
+    </div>
+    <div class="container-fluid m-0 p-0"><img src="img/macbook.png" class="w-100"> </div>
+    <div class="container-fluid bg-pick-map" id="block2">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class=" col-8 col-xl-6 disp-none-img">
+                    <div class="img-shadow" style="width:500px; height:500px">
+                        <div id="map" style="width:500px; height:500px"></div>
+                    </div>
+                </div>
+                <div class="col map">
+                    <div class="row mt-5">
+                        <div class="col-2">
+                            <img src="img/map-icon-1.png" alt="">
+                        </div>
+                        Адрес:<br> г. Томск Иркутский тракт, 53Б
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-2">
+                            <img src="img/map-icon-2.png" alt="">
+                        </div>
+                        Телефон:<br> +7(3822)47-95-20
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-2">
+                            <img src="img/map-icon-3.png" alt="">
+                        </div>
+                        E-mail:<br> adventa@mail.ru
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-2">
+                            <img src="img/map-icon-4.png" alt="">
+                        </div>
+                        Режим работы:<br> Пн-Пт с 9:00 до 18:00
+                    </div>
+                </div>
+
             </div>
-        </nav>
+        </div>
     </div>
 
-    <div class="container">
-        <a href="index.html"> <button type="button" class="btn btn-transparent mt-5 px-5 py-2">ВЕРНУТЬСЯ НА САЙТ</button></a>
-        <h2 class="mt-5">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
-        <h4 class="color-green mt-5">ОБЩИЕ ПОЛОЖЕНИЯ</h4>
+    <div class="container-fluid bg-dark px-main pb-5 footer">
+        <div class="container color-white">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a href="index.html"><img src="img/logo-light.png" alt=""></a><br>
+                    <small class="mt-3 d-block">г. Томск, 2018 г.</small><br>
+                    <a href="privacy-policy.html" class="color-white d-block"><small>Политика кофиденциальности</small></a><br>
+                    <a href="http://photos.icons8.com" class="color-white mt-2 d-block" style="font-size: 14px">Alexey Sokolov / Icons8 / CC BY-ND 3.0</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="index.html#about" class="color-white d-block mt-2">О нас</a>
+                    <a href="index.html#block1" class="color-white d-block mt-2">Почему с нами выгодно</a>
+                    <a href="index.html#how" class="color-white d-block mt-2">Как мы работаем</a>
+                    <a href="index.html#servis" class="color-white d-block mt-2">Бухгалтерские услуги</a>
+                    <a href="index.html#sertificat" class="color-white d-block mt-2">Услуги по сертификации</a>
+                    <a href="index.html#block2" class="color-white d-block mt-2">Контакты</a>
+                </div>
+                <div class="col-12 col-md border-left">
+                    <h5>Остались Вопросы?</h5>
+                    Просто оставьте заявку,<br> и наш специалист проконсультирует вас<br>
+                    <button type="button" class="btn btn-primary mx-auto mt-4" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
 
-        <p>Настоящие Положение о политике конфиденциальности (далее — Положение) является официальным документом компании "Адвента", расположенной в г. Томск (далее - Компания / Оператор), и определяет порядок обработки и защиты информации о физических лицах (далее — Пользователи), пользующихся сервисами, информацией, услугами, программами (в т.ч. программами лояльности) и продуктами интернет-магазина, расположенного на доменном имени info@adventa.ru (далее — Сайт).</p>
-        <p>Соблюдение конфиденциальности важно для Компании, ведь целью данной Политики конфиденциальности является обеспечение защиты прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну, от несанкционированного доступа и разглашения.</p>
-        <p>Мы разработали Политику Конфиденциальности, которая описывает, как мы осуществляем обработку персональных данных — любые действия (операции) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
-        <p>Отношения, связанные с обработкой персональных данных и информации о пользователях Сайта, регулируются настоящим Положением, иными официальными документами Оператора и действующим законодательством РФ.</p>
-        <p>Обработка персональных данных осуществляется нами на законной и справедливой основе, действуя разумно и добросовестно и на основе принципов:</p>
-        <p>— законности целей и способов обработки персональных данных;</p>
-        <p>— добросовестности;</p>
-        <p>— соответствия целей обработки персональных данных целям, заранее определенным и заявленным при сборе персональных данных, а также полномочиям Компании;</p>
-        <p>— соответствия объема и характера обрабатываемых персональных данных, способов обработки персональных данных целям обработки персональных данных</p>
-        <p>Настоящая Политика Конфиденциальности регулирует любой вид обработки персональных данных и информации личного характера (любой информации, позволяющей установить личность, и любой иной информации, связанной с этим) о физических лицах, которые являются потребителями продукции или услуг Компании.</p>
-        <p>Настоящая Политика распространяется на обработку личных, персональных данных, собранных любыми средствами, как активными, так и пассивными, как через Интернет, так и без его использования, от лиц, находящихся в любой точке мира.</p>
-
-    </div>
-</div>
-<div class="container-fluid m-0 p-0"><img src="img/macbook.png" class="w-100"> </div><div class="container-fluid bg-white" id="block2">
-    <div class="container pt-5 pb-5">
-        <div class="row">
-            <div class=" col-sm-4 col-md-6 disp-none">
-                <img src="img/map.png" alt="" class="w-100  img-shadow-white">
-            </div>
-            <div class="col map">
-                <div class="row mt-5">
-                    <div class="col-2">
-                        <img src="img/map-icon-1.png" alt="">
-                    </div>
-                    Адрес:<br> г. Томск
-                </div>
-                <div class="row mt-5">
-                    <div class="col-2">
-                        <img src="img/map-icon-2.png" alt="">
-                    </div>
-                    Телефон:<br> 8-987-654-32-10
-                </div>
-                <div class="row mt-5">
-                    <div class="col-2">
-                        <img src="img/map-icon-3.png" alt="">
-                    </div>
-                    E-mail:<br> adventa@mail.ru
-                </div>
-                <div class="row mt-5">
-                    <div class="col-2">
-                        <img src="img/map-icon-4.png" alt="">
-                    </div>
-                    Режим работы:<br> Пн-Пт с 9:00 до 18:00
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="container-fluid bg-dark pt-5 pb-5">
-    <div class="container color-white">
-        <div class="row">
-            <div class="col">
-                <a href="index.html"><img src="img/logo.png" alt=""></a>
-                <h6 class="mt-4">Агентство содействия<br>бизнесу</h6>
-                <small>г. Томск, 2018 г.</small><br>
-                <a href="privacy-policy.html" class="color-white "><small>Политика кофиденциальности</small></a>
-            </div>
-            <div class="col">
-                <a href="index.html#about" class="color-white d-block mt-2">О нас</a>
-                <a href="index.html#block1" class="color-white d-block mt-2">Почему с нами выгодно</a>
-                <a href="index.html#how" class="color-white d-block mt-2">Как мы работаем</a>
-                <a href="index.html#servis" class="color-white d-block mt-2">Бухгалтерские услуги</a>
-                <a href="index.html#sertificat" class="color-white d-block mt-2">Услуги по сертификации</a>
-                <a href="index.html#block2" class="color-white d-block mt-2">Контакты</a>
-            </div>
-            <div class="col border-left">
-                <h5>Остались Вопросы?</h5>
-                Просто оставьте заявку, и наш специалист проконсультирует вас
-                <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
-
+    <div class="modal fade" id="consultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-5 text-center border-dark">
+                <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
+                <form>
+                    <input type="text" placeholder="Ваше имя" class="form-control mt-4">
+                    <input type="tel" placeholder="Ваш телефон" class="form-control mt-4">
+                    <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
+                    <div class="custom-control custom-checkbox mt-2">
+                        <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">Согласие на обработку <a href="#" class="text-dark">Персональных данных</a> </label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3">ОТПРАВИТЬ</button>
+                </form>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="consultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content p-5 text-center border-dark">
-            <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
-            <form>
-                <input type="text" placeholder="Ваше имя" class="form-control mt-4">
-                <input type="tel" placeholder="Ваш телефон" class="form-control mt-4">
-                <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
-                <div class="custom-control custom-checkbox mt-2">
-                    <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2">
-                    <label class="custom-control-label" for="customCheck2">Согласие на обработку <a href="#" class="text-dark">Персональных данных</a> </label>
-                </div>
-                <button type="button" class="btn btn-primary mt-3">ОТПРАВИТЬ</button>
-            </form>
-        </div>
-    </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

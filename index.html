@@ -2,10 +2,25 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=0.9">
     <title>Adventa</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <!--Подключение 2гис-->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script>
+        var map;
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [ 56.505262,85.018929],
+                zoom: 16
+
+
+            });
+            DG.marker([56.505269, 85.017935]).addTo(map).bindPopup('Иркутский тракт, 53Б');
+        });
+    </script>
+
 </head>
 <body>
     <div class="container-fluid d-inline-block index">
@@ -77,7 +92,7 @@
         </div>
     </div>
 
-    <div class="container about">
+    <div class="container px-main">
         <div class="row">
             <div class="col-2 disp-none"><img src="img/about-left.png" alt="" class="w-100"></div>
             <div class="col-12 col-md-8">
@@ -100,25 +115,25 @@
     </div>
 
     <!--РЕШАЕМ ЛЮБЫЕ ЗАДАЧИ-->
-    <div class="container-fluid pt-5 pb-5 bg-pick">
+    <div class="container-fluid px-main bg-pick">
         <div class="container">
             <div class="row">
-                <div class="col col-lg-5 col-xl-6 disp-none ">
-                    <img  src="img/tasks.png" alt="" class="w-100 img-shadow">
+                <div class="col col-lg-5 col-xl-6 disp-none-img text-center">
+                    <img  src="img/tasks.png" alt="" class="w-75 img-shadow">
                 </div>
-                <div class="col">
+                <div class="col text-center-md">
                     <h2 class="mb-5"><span class="color-green">РЕШАЕМ</span> ЛЮБЫЕ ЗАДАЧИ</h2>
                     <div class="row mb-4">
-                        <div class="col-xl-3 col-md-12 color-green">БУХГАЛТЕРСКИЕ УСЛУГИ</div>
-                        <div class="col-xl-7 col-sm-12 col-md-10">Ведение бухгалтерского и налогового учета Составление и отправка отчетности Восстановление бухучета Регистрация ООО и ИП </div>
+                        <div class="col-xl-3 col-md-12 color-green font-medium">БУХГАЛТЕРСКИЕ УСЛУГИ</div>
+                        <div class="col-xl-7 col-sm-12 col-md-10 roboto">Ведение бухгалтерского и налогового учета<br> Составление и отправка отчетности<br> Восстановление бухучета Регистрация ООО и ИП </div>
                     </div>
                     <div class="row mb-4">
-                        <div class="col-xl-3 col-md-12 color-green">СЕРТИФИКАЦИЯ</div>
-                        <div class="col-xl-7 col-sm-12 col-md-10">Сертификация и декларация Сертификация менджмента Техническая документация </div>
+                        <div class="col-xl-3 col-md-12 color-green font-medium">СЕРТИФИКАЦИЯ</div>
+                        <div class="col-xl-7 col-sm-12 col-md-10 roboto">Сертификация и декларация<br> Сертификация менджмента<br> Техническая документация </div>
                     </div>
                     <div class="row mb-4">
-                        <div class="col-xl-3 col-md-12 color-green">ЮРИДИЧЕСКИЕ УСЛУГИ</div>
-                        <div class="col-xl-7 col-sm-12 col-md-10">Консультации Сопровождение в суде Представительство в суде</div>
+                        <div class="col-xl-3 col-md-12 color-green font-medium">ЮРИДИЧЕСКИЕ УСЛУГИ</div>
+                        <div class="col-xl-7 col-sm-12 col-md-10 roboto">Консультации<br> Сопровождение в суде<br> Представительство в суде</div>
                     </div>
                 </div>
             </div>
@@ -126,7 +141,7 @@
     </div>
 
     <!--БУХГАЛТЕРСКИЕ УСЛУГИ мобильныя версия-->
-    <div class="container text-center pt-5 pb-5 disp-m px-0" id="servis-m">
+    <div class="container text-center px-main disp-m px-0" id="servis-m">
         <h2><span class="color-green">БУХГАЛТЕРСКИЕ</span> УСЛУГИ</h2>
         <div class="accordion bg-white text-left" id="accordion-m1">
             <div class="card">
@@ -134,7 +149,7 @@
                     <h5 class="mb-0">
                         <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m1" role="button" aria-expanded="false" aria-controls="collapse-m1">
                             <div class="col-7">
-                                ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
+                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
                             </div>
                             <div class="col">
                                 от 1 000 руб
@@ -145,7 +160,7 @@
 
                 <div id="collapse-m1" class="collapse show" aria-labelledby="heading-m1" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ...
+                        Полный комплекс услуг, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчетности. Мы практикуем индивидуальный подход к каждому клиенту.
                     </div>
                 </div>
             </div>
@@ -154,7 +169,7 @@
                     <h5 class="mb-0">
                         <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m2" role="button" aria-expanded="false" aria-controls="collapse-m2">
                             <div class="col-7">
-                                ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
+                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
                             </div>
                             <div class="col">
                                 от 500 руб
@@ -164,7 +179,7 @@
                 </div>
                 <div id="collapse-m2" class="collapse" aria-labelledby="heading-m2" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ...
+                        ИП не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учета значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учета позволяет оценить состояние своего бизнеса и определить уровень его доходности.
                     </div>
                 </div>
             </div>
@@ -183,10 +198,7 @@
                 </div>
                 <div id="collapse-m3" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
                     <div class="card-body">
-                        <p>- Подготовка и своевременная отправка отчетов в любую инспекцию, фонд социального страхования, пенсионный фонд</p>
-                        <p>- Заказ актов сверок, выписок по лицевым счетам; </p>
-                        <p>- Подготовка справок о состоянии расчетов, отсутствии задолженности, перечне сданных деклараций;</p>
-                        <p>- Заполнение и подготовка нулевой отчетности; - Подготовка и сдача нулевой отчетности.</p>
+                        Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчетов, сформировать и отправить налоговые декларации в установленные сроки.
                     </div>
                 </div>
             </div>
@@ -205,7 +217,7 @@
                 </div>
                 <div id="collapse-m4" class="collapse" aria-labelledby="heading-m4" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ...
+                        Помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учета.
                     </div>
                 </div>
             </div>
@@ -224,7 +236,7 @@
                 </div>
                 <div id="collapse-m5" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ...
+                        Анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учета в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчеты.
                     </div>
                 </div>
             </div>
@@ -243,16 +255,16 @@
                 </div>
                 <div id="collapse-m6" class="collapse" aria-labelledby="heading-m6" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ...
+                        Систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет,                        зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+        <button type="button" class="btn btn-primary mx-auto mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
     </div>
 
     <!--УСЛУГИ ПО СЕРТИФИКАЦИИ мобильныя версия-->
-    <div class="container text-center pt-5 pb-5 disp-m px-0" id="sertificat-m">
+    <div class="container text-center px-main disp-m px-0" id="sertificat-m">
         <h2>УСЛУГИ ПО <span class="color-green">СЕРТИФИКАЦИИ</span></h2>
         <div class="accordion bg-white text-left" id="accordion-m2">
             <div class="card">
@@ -268,158 +280,142 @@
                         </h5>
                     </div>
                 </a>
-                <div id="collapse-m21" class="collapse show" aria-labelledby="heading-m21" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        ...
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m22" role="button" aria-expanded="false" aria-controls="collapse-m22">
-                    <div class="card-header bg-white" id="heading-m22">
-                        <h5 class="row mb-0">
-                             <div class="col-7">
-                                    СЕРТИФИКАТ СООТВЕТСТВИЯ
-                                </div>
-                                <div class="col">
-                                    от 10 000 руб
-                                </div>
-                        </h5>
-                    </div>
-                </a>
-                <div id="collapse-m22" class="collapse" aria-labelledby="heading-m22" data-parent="#accordion-m2">
-                    <div class="card-body">
+                <div id="collapse-m21" class="collapse show sert-m" aria-labelledby="heading-m21" data-parent="#accordion-m2">
 
-                        <div class="row">
-                            <div class="col-7">Оборудование</div>
-                            <div class="col"> от 25 000 руб</div>
+                        <div class="card">
+                            <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m22" role="button" aria-expanded="false" aria-controls="collapse-m22">
+                                <div class="card-header bg-white" id="heading-m22">
+                                    <h5 class="row mb-0">
+                                        <div class="col-7">
+                                            СЕРТИФИКАТ СООТВЕТСТВИЯ
+                                        </div>
+                                        <div class="col">
+                                            от 10 000 руб
+                                        </div>
+                                    </h5>
+                                </div>
+                            </a>
+                            <div id="collapse-m22" class="collapse" aria-labelledby="heading-m22" >
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-7">Оборудование</div>
+                                        <div class="col"> от 25 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Техника (бытовая, электрика)</div>
+                                        <div class="col"> от 25 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Игрушки</div>
+                                        <div class="col"> от 19 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Одежда</div>
+                                        <div class="col"> от 18 000 руб</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">Техника (бытовая, электрика)</div>
-                            <div class="col"> от 25 000 руб</div>
+                        <div class="card">
+                            <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m23" role="button" aria-expanded="false" aria-controls="collapse-m23">
+                                <div class="card-header bg-white" id="heading-m23">
+                                    <h5 class="row mb-0">
+                                        <div class="col-7">
+                                            ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
+                                        </div>
+                                        <div class="col">
+                                            от 6 000 руб
+                                        </div>
+                                    </h5>
+                                </div>
+                            </a>
+                            <div id="collapse-m23" class="collapse" aria-labelledby="heading-m23">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-7">Оборудование</div>
+                                        <div class="col"> от 9 500 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Техника (бытовая, электрика)</div>
+                                        <div class="col"> от 9 500 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Мебель</div>
+                                        <div class="col"> от 10 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Одежда</div>
+                                        <div class="col"> от 8 500 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Упаковка</div>
+                                        <div class="col"> от 8 500 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Посуда</div>
+                                        <div class="col"> от 6 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Хозяйственно-бытовые товары</div>
+                                        <div class="col"> от 6 000 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Косметика</div>
+                                        <div class="col"> от 9 500 руб</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-7">Пищевая продукция</div>
+                                        <div class="col"> от 8 000 руб</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">Игрушки</div>
-                            <div class="col"> от 19 000 руб</div>
+                        <div class="card">
+                            <a class="p-0 btn-link ">
+                                <div class="card-header bg-white" id="heading-m24">
+                                    <h5 class="row mb-0">
+                                        <div class="col-7">
+                                            СВИДЕТЕЛЬСТВОО ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
+                                        </div>
+                                        <div class="col">
+                                            от 24 000 руб
+                                        </div>
+                                    </h5>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-7">Одежда</div>
-                            <div class="col"> от 18 000 руб</div>
+                        <div class="card">
+                            <a class="p-0 btn-link ">
+                                <div class="card-header bg-white" id="heading-m25">
+                                    <h5 class="row mb-0">
+                                        <div class="col-7">
+                                            ОТКАЗНОЕ ПИСЬМО
+                                        </div>
+                                        <div class="col">
+                                            от 10 000 руб
+                                        </div>
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a class="p-0 btn-link " >
+                                <div class="card-header bg-white" id="heading-m26">
+                                    <h5 class="row mb-0">
+                                        <div class="col-7">
+                                            ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
+                                        </div>
+                                        <div class="col">
+                                            от 15 000 руб
+                                        </div>
+                                    </h5>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="card">
-                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m23" role="button" aria-expanded="false" aria-controls="collapse-m23">
-                    <div class="card-header bg-white" id="heading-m23">
-                        <h5 class="row mb-0">
-                                <div class="col-7">
-                                    ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
-                                </div>
-                                <div class="col">
-                                    от 6 000 руб
-                                </div>
-                        </h5>
-                    </div>
-                </a>
-                <div id="collapse-m23" class="collapse" aria-labelledby="heading-m23" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-7">Оборудование</div>
-                            <div class="col"> от 9 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Техника (бытовая, электрика)</div>
-                            <div class="col"> от 9 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Мебель</div>
-                            <div class="col"> от 10 000 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Одежда</div>
-                            <div class="col"> от 8 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Упаковка</div>
-                            <div class="col"> от 8 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Посуда</div>
-                            <div class="col"> от 6 000 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Хозяйственно-бытовые товары</div>
-                            <div class="col"> от 6 000 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Косметика</div>
-                            <div class="col"> от 9 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Пищевая продукция</div>
-                            <div class="col"> от 8 000 руб</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m24" role="button" aria-expanded="false" aria-controls="collapse-m24">
-                    <div class="card-header bg-white" id="heading-m24">
-                    <h5 class="row mb-0">
-                        <div class="col-7">
-                            СВИДЕТЕЛЬСТВОО ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
-                        </div>
-                        <div class="col">
-                            от 24 000 руб
-                        </div>
-                    </h5>
-                </div>
-                </a>
-                <div id="collapse-m24" class="collapse" aria-labelledby="heading-m24" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        ...
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m25" role="button" aria-expanded="false" aria-controls="collapse-m25">
-                    <div class="card-header bg-white" id="heading-m25">
-                        <h5 class="row mb-0">
-                                <div class="col-7">
-                                    ОТКАЗНОЕ ПИСЬМО
-                                </div>
-                                <div class="col">
-                                    от 10 000 руб
-                                </div>
-                        </h5>
-                    </div>
-                </a>
-                <div id="collapse-m25" class="collapse" aria-labelledby="heading-m23" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        ...
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m26" role="button" aria-expanded="false" aria-controls="collapse-m26">
-                    <div class="card-header bg-white" id="heading-m26">
-                        <h5 class="row mb-0">
-                                <div class="col-7">
-                                    ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
-                                </div>
-                                <div class="col">
-                                    от 15 000 руб
-                                </div>
-                        </h5>
-                    </div>
-                </a>
-                <div id="collapse-m26" class="collapse" aria-labelledby="heading-m26" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        ...
-                    </div>
-                </div>
-            </div>
+
             <div class="card">
                 <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m27" role="button" aria-expanded="false" aria-controls="collapse-m27">
                     <div class="card-header bg-white" id="heading-m27">
@@ -435,7 +431,7 @@
                 </a>
                 <div id="collapse-m27" class="collapse" aria-labelledby="heading-m27" data-parent="#accordion-m2">
                     <div class="card-body">
-                        ...
+
                     </div>
                 </div>
             </div>
@@ -454,12 +450,19 @@
                 </a>
                 <div id="collapse-m28" class="collapse" aria-labelledby="heading-m26" data-parent="#accordion-m2">
                     <div class="card-body">
-                        ...
+                        <div class="row">
+                            <div class="col-7">Разработка технических условий</div>
+                            <div class="col"> от 9 500 руб</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">Регистрация технических условий</div>
+                            <div class="col"> от 12 000 руб</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+        <button type="button" class="btn btn-primary mx-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
     </div>
 
     <!--ОСТАВЬТЕ ЗАЯВКУ-->
@@ -485,37 +488,37 @@
     </div>
 
     <!--ПОЧЕМУ С НАМИ-->
-    <div class="container text-center mt-5 mb-5"  >
-        <h2>ПОЧЕМУ С НАМИ <span class="color-green">ВЫГОДНО</span></h2>
+    <div class="container text-center px-main"  >
+        <h2 class="pb-3">ПОЧЕМУ С НАМИ <span class="color-green">ВЫГОДНО</span></h2>
         <div class="row text-left">
-            <div class="col-12 col-md-4  mt-4">
+            <div class="col-12 col-md-4  mt-5 pt-3">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-1.png" class="float-left" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-9">
                         <h5 class="color-green">ВЫСОКАЯ КВАЛИФИКАЦИЯ</h5>
                         В штате только опытные аттестованные специалисты
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4  mt-4">
+            <div class="col-12 col-md-4  mt-5 pt-3 ">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-2.png" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-9">
                         <h5 class="color-green">СТРОГОЕ СООТВЕТСВИЕ ЗАКОНОДАТЕЛЬСТВУ РФ</h5>
                         Систематично прослеживаем изменения в законодательстве
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4  mt-4">
+            <div class="col-12 col-md-4  mt-5 pt-3">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-3.png" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-9">
                         <h5 class="color-green">ГАРАНТИЯ КАЧЕСТВА</h5>
                         Закрепляем нашу ответственность договором
                     </div>
@@ -524,34 +527,34 @@
         </div>
 
         <div class="row  text-left">
-            <div class="col-12 col-md-4 mt-4">
+            <div class="col-12 col-md-4 mt-5 pt-3">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-4.png" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-7">
                         <h5 class="color-green">ПОЛНЫЙ КОМПЛЕКС УСЛУГ</h5>
                         От консультирования до решения нестандартных задач
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4  mt-4">
+            <div class="col-12 col-md-4  mt-5 pt-3">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-5.png" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-9">
                         <h5 class="color-green">МАКСИМАЛЬНАЯ ОПЕРАТИВНОСТЬ</h5>
                          Оформим документы в кратчайшие сроки
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4  mt-4">
+            <div class="col-12 col-md-4  mt-5 pt-3">
                 <div class="row">
-                    <div class="col-3 col-md-5 col-lg-3">
+                    <div class="col-2 col-md-5 col-lg-3">
                         <img src="img/icon-6.png" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col-9 col-md-12 col-lg-9">
                         <h5 class="color-green">БЕЗОПАСНОСТЬ ВАШИХ ДАННЫХ</h5>
                         Гарантируем полную конфиденциальность данных
                     </div>
@@ -561,10 +564,10 @@
     </div>
 
     <!-- как мы работаем -->
-    <div class="container-fluid pt-5 pb-5 bg-pick how" id="how">
+    <div class="container-fluid bg-pick how px-main" id="how">
         <div class="container text-center">
             <h2>КАК МЫ <span class="color-green">РАБОТАЕМ</span></h2>
-            <div class="row mt-5">
+            <div class="row mt-5 roboto">
                 <div class="col-12 col-md mt-3">
                     <h5 class="color-green">
                         ЗАЯВКА
@@ -592,7 +595,7 @@
                 <div class="col-12 col-md mt-3">
                     <img src="img/how-work.png" alt="">
                 </div>
-                <div class="col-12 col-md mt-3">
+                <div class="col-12 col-md col-lg-5 col-xl mt-3">
                     <h5 class="color-green">
                         ДОКУМЕНТЫ
                     </h5>
@@ -633,33 +636,33 @@
     </div>
 
     <!--БУХГАЛТЕРСКИЕ УСЛУГИ-->
-    <div class="container text-center pt-5 pb-5 disp-none sertificat" id="servis">
+    <div class="container text-center px-main disp-none sertificat" id="servis">
         <h2><span class="color-green">БУХГАЛТЕРСКИЕ</span> УСЛУГИ</h2>
         <div class="row justify-content-around ">
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5 mb-4" style="height: 50px">ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ</h5>
+                    <h5 class="card-title mt-5 mb-4" style="height: 50px">ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ</h5>
                     <h5 class="bg-green pt-3 pb-3">от 1 000 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(1);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5 mb-4" style="height: 50px">ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП</h5>
+                    <h5 class="card-title mt-5 mb-4" style="height: 50px">ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП</h5>
                     <h5 class="bg-green pt-3 pb-3">от 500 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(2);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5 mb-4 " style="height: 50px">СОСТАВЛЕНИЕ И ОТПРИВЕКА ОТЧЕТНОСТИ</h5>
+                    <h5 class="card-title mt-5 mb-4 " style="height: 50px">СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЕТНОСТИ</h5>
                     <h5 class="bg-green pt-3 pb-3">от 200 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(3);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
@@ -668,7 +671,7 @@
                     <h5 class="card-title mt-5 mb-4" style="height: 50px">РЕГИСТРАЦИЯ ООО И ИП</h5>
                     <h5 class="bg-green pt-3 pb-3">от 500 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(4);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
@@ -677,7 +680,7 @@
                     <h5 class="card-title mt-5 mb-4" style="height: 50px">ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА</h5>
                     <h5 class="bg-green pt-3 pb-3">от 200 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(5);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
@@ -686,7 +689,7 @@
                     <h5 class="card-title mt-5 mb-4" style="height: 50px">КАДРОВЫЙ УЧЕТ</h5>
                     <h5 class="bg-green pt-3 pb-3">от 350 руб</h5>
                     <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(6);">
-                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        ПОДРОБНЕЕ
                     </button>
                 </div>
             </div>
@@ -715,12 +718,12 @@
     </div>
 
     <!--УСЛУГИ ПО СЕРТИФИКАЦИИ-->
-    <div class="container text-center pt-5 pb-5 disp-none sertificat" id="sertificat">
+    <div class="container text-center px-main disp-none sertificat" id="sertificat">
         <h2>УСЛУГИ ПО <span class="color-green">СЕРТИФИКАЦИИ</span></h2>
         <div class="row justify-content-around">
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5 mb-4">СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ</h5>
+                    <h5 class="card-title mt-5 mb-4">СЕРТИФИКАЦИЯ И ДЕКЛАРАЦИЯ</h5>
                     <h5 class="bg-green pt-3 pb-3">от 1 000 руб</h5>
                     <ul class="spec mt-3">
                         <li>Сертификат соответствия</li>
@@ -729,7 +732,7 @@
                         <li>Отказное письмо</li>
                         <li>Экспертное заключение</li>
                     </ul>
-                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(1)">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(1)">ПОДРОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
@@ -743,7 +746,7 @@
                         <li>ISO 22000</li>
                         <li>Интегрированная система менеджмента</li>
                     </ul>
-                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(2)">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(2)">ПОДРОБНЕЕ</button>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
@@ -754,31 +757,33 @@
                         <li>Разработка технических условий</li>
                         <li>Регистрация технических условий</li>
                     </ul>
-                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(3)">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#Accounting-services" onclick="stratification(3)">ПОДРОБНЕЕ</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!--КОНТАКТЫ-->
-    <div class="container-fluid bg-pick" id="block2">
+    <div class="container-fluid bg-pick-map" id="block2">
         <div class="container pt-5 pb-5">
             <div class="row">
-                <div class=" col-sm-4 col-md-6 disp-none">
-                    <img src="img/map.png" alt="" class="w-100  img-shadow">
+                <div class=" col-8 col-xl-6 disp-none-img">
+                    <div class="img-shadow" style="width:500px; height:500px">
+                        <div id="map" style="width:500px; height:500px"></div>
+                    </div>
                 </div>
                 <div class="col map">
                     <div class="row mt-5">
                         <div class="col-2">
                             <img src="img/map-icon-1.png" alt="">
                         </div>
-                        Адрес:<br> г. Томск
+                        Адрес:<br> г. Томск Иркутский тракт, 53Б
                     </div>
                     <div class="row mt-5">
                         <div class="col-2">
                         <img src="img/map-icon-2.png" alt="">
                         </div>
-                        Телефон:<br> 8-987-654-32-10
+                        Телефон:<br> +7(3822)47-95-20
                     </div>
                     <div class="row mt-5">
                         <div class="col-2">
@@ -793,21 +798,22 @@
                         Режим работы:<br> Пн-Пт с 9:00 до 18:00
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
     <!--FOOTER-->
-    <div class="container-fluid bg-dark pt-5 pb-5">
+    <div class="container-fluid bg-dark px-main pb-5 footer">
         <div class="container color-white">
             <div class="row">
-                <div class="col">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
-                    <h6 class="mt-4">Агентство содействия<br>бизнесу</h6>
-                    <small>г. Томск, 2018 г.</small><br>
-                    <a href="privacy-policy.html" class="color-white "><small>Политика кофиденциальности</small></a>
+                <div class="col-12 col-md">
+                    <a href="index.html"><img src="img/logo-light.png" alt=""></a><br>
+                    <small class="mt-3 d-block">г. Томск, 2018 г.</small><br>
+                    <a href="privacy-policy.html" class="color-white d-block"><small>Политика кофиденциальности</small></a><br>
+                    <a href="http://photos.icons8.com" class="color-white mt-2 d-block" style="font-size: 14px">Alexey Sokolov / Icons8 / CC BY-ND 3.0</a>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md">
                     <a href="#about" class="color-white d-block mt-2">О нас</a>
                     <a href="#block1" class="color-white d-block mt-2">Почему с нами выгодно</a>
                     <a href="#how" class="color-white d-block mt-2">Как мы работаем</a>
@@ -815,10 +821,10 @@
                     <a href="#sertificat" class="color-white d-block mt-2">Услуги по сертификации</a>
                     <a href="#block2" class="color-white d-block mt-2">Контакты</a>
                 </div>
-                <div class="col border-left">
+                <div class="col-12 col-md border-left">
                     <h5>Остались Вопросы?</h5>
-                    Просто оставьте заявку, и наш специалист проконсультирует вас
-                    <button type="button" class="btn btn-primary m-5 mt-4" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    Просто оставьте заявку,<br> и наш специалист проконсультирует вас<br>
+                    <button type="button" class="btn btn-primary mx-auto mt-4" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
 
                 </div>
             </div>
@@ -854,7 +860,7 @@
                                 <div class="col-11">
                                     <h5 class="mb-0">
                                         <button class="btn btn-link p-0 " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ
+                                            СЕРТИФИКАЦИЯ И ДЕКЛАРАЦИЯ
                                         </button>
                                     </h5>
                                 </div>
@@ -899,7 +905,7 @@
                                 <div class="card-header bg-white border-0 p-3 pl-5" id="heading2">
                                     <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
                                         <div class="col-8">
-                                            ДЕЛАРАЦИЯ СООТВЕТСТВИЯ
+                                            ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
                                         </div>
                                         <div class="col-3">
                                             от 6 000 руб
@@ -1083,26 +1089,50 @@
                             </div>
                         </div>
                         <div id="collapseThree" class="collapse bg-white" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
-                            <form class="row justify-content-center">
-                                <div class="col-4">
-                                    <input type="text" placeholder="Ваше имя" class="form-control mt-4">
-                                    <input type="tel" placeholder="Ваш телефон" class="form-control mt-4">
+                            <div class="card">
+                                <div class="card-header bg-white p-3 pl-5" >
+                                    <a class="row p-0 btn-link " >
+                                        <div class="col-8">
+                                            Разработка технических условий
+                                        </div>
+                                        <div class="col">
+                                            от 9 500 руб
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-4">
-                                    <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
-                                    <div class="mt-4">
-                                        <button type="button" class="btn btn-primary w-100">ОТПРАВИТЬ</button>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mt-2">
-                                        <input type="checkbox" class="custom-control-input  mt-4" id="customCheck3">
-                                        <label class="custom-control-label mb-3" for="customCheck3">
-                                            Согласие на обработку <a href="#" class="text-dark">Персональных данных</a>
-                                        </label>
-                                    </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-white p-3 pl-5" >
+                                    <a class="row p-0 btn-link " >
+                                        <div class="col-8">
+                                            Регистрация технических условий
+                                        </div>
+                                        <div class="col">
+                                            от 12 000 руб
+                                        </div>
+                                    </a>
                                 </div>
-                            </form>
+                            </div>
                         </div>
+                        <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
+                        <form class="row justify-content-center">
+                            <div class="col-4">
+                                <input type="text" placeholder="Ваше имя" class="form-control mt-4">
+                                <input type="tel" placeholder="Ваш телефон" class="form-control mt-4">
+                            </div>
+                            <div class="col-4">
+                                <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
+                                <div class="mt-4 ">
+                                    <button type="button" class="btn btn-primary w-100 py-1">ОТПРАВИТЬ</button>
+                                </div>
+                                <div class="custom-control custom-checkbox mt-2">
+                                    <input type="checkbox" class="custom-control-input  mt-4" id="customCheck3">
+                                    <label class="custom-control-label mb-3" for="customCheck3">
+                                        Согласие на обработку <a href="#" class="text-dark">Персональных данных</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1125,7 +1155,7 @@
                         <div class="card-header bg-white p-3 pl-5" id="heading2-1">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-1" role="button" aria-expanded="false" aria-controls="collapse2-1">
                                 <div class="col-8">
-                                    ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
+                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
                                 </div>
                                 <div class="col col-3">
                                     от 1 000 руб
@@ -1134,12 +1164,15 @@
                                     <img src="img/Union.png" alt="" id="buh-union1">
                                 </div>
                             </a>
-                            <div id="collapse2-1" class="collapse bg-white card-body p-0 " aria-labelledby="heading2-1" data-parent="#accordion-buh">...</div>
+                            <div class="row pl-3">
+                                <div id="collapse2-1" class="collapse bg-white card-body p-0  mt-2 col-7  roboto" aria-labelledby="heading2-1" data-parent="#accordion-buh">
+                                Полный комплекс услуг, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчетности. Мы практикуем индивидуальный подход к каждому клиенту.
+                                </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-2">
                             <a class="row p-0 btn-link "  data-toggle="collapse" href="#collapse2-2" role="button" aria-expanded="false" aria-controls="collapse2-2">
                                 <div class="col-8">
-                                    ВЕДЕНИЕ БУХГПЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
+                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
                                 </div>
                                 <div class="col col-3">
                                     от 500 руб
@@ -1148,7 +1181,10 @@
                                     <img src="img/Union.png" alt="" id="buh-union2">
                                 </div>
                             </a>
-                            <div id="collapse2-2" class="collapse bg-white card-body p-0 " aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div class="row pl-3">
+                                <div id="collapse2-2" class="collapse bg-white card-body p-0  mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                                ИП не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учета значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учета позволяет оценить состояние своего бизнеса и определить уровень его доходности.
+                                </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-3">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-3" role="button" aria-expanded="false" aria-controls="collapse2-3" >
@@ -1162,12 +1198,10 @@
                                     <img src="img/Union.png" alt="" id="buh-union3">
                                 </div>
                             </a>
-                            <div id="collapse2-3" class="collapse bg-white card-body col-8 p-0 text-left" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                <p>- Подготовка и своевременная отправка отчетов в любую инспекцию, фонд социального страхования, пенсионный фонд</p>
-                                <p>- Заказ актов сверок, выписок по лицевым счетам; </p>
-                                <p>- Подготовка справок о состоянии расчетов, отсутствии задолженности, перечне сданных деклараций;</p>
-                                <p>- Заполнение и подготовка нулевой отчетности; - Подготовка и сдача нулевой отчетности.</p>
-                            </div>
+                            <div class="row pl-3">
+                                <div id="collapse2-3" class="collapse bg-white card-body mt-2 col-7 p-0 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                                Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчетов, сформировать и отправить налоговые декларации в установленные сроки.
+                                </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-4">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-4" role="button" aria-expanded="false" aria-controls="collapse2-4" >
@@ -1181,7 +1215,10 @@
                                     <img src="img/Union.png" alt="" id="buh-union4">
                                 </div>
                             </a>
-                            <div id="collapse2-4" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div class="row pl-3">
+                                <div id="collapse2-4" class="collapse bg-white card-body p-0 mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                                Помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учета.
+                                </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-5">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-5" role="button" aria-expanded="false" aria-controls="collapse2-5" >
@@ -1195,7 +1232,10 @@
                                     <img src="img/Union.png" alt="" id="buh-union5">
                                 </div>
                             </a>
-                            <div id="collapse2-5" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div class="row pl-3">
+                                <div id="collapse2-5" class="collapse bg-white card-body p-0 mt-2  col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                                Анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учета в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчеты.
+                                </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5" id="heading2-6">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-6" role="button" aria-expanded="false" aria-controls="collapse2-6" >
@@ -1209,7 +1249,10 @@
                                     <img src="img/Union.png" alt="" id="buh-union6">
                                 </div>
                             </a>
-                            <div id="collapse2-6" class="collapse bg-white card-body p-0" aria-labelledby="heading2-2" data-parent="#accordion-buh">...</div>
+                            <div class="row pl-3">
+                            <div id="collapse2-6" class="collapse bg-white card-body p-0 mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
+                                Систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет, зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
+                            </div></div>
                         </div>
                     </div>
                     <h3 class="color-green text-center mt-4">ОСТАВИТЬ ЗАЯВКУ</h3>
@@ -1221,13 +1264,14 @@
                         <div class="col-4">
                             <input type="email" placeholder="Ваш e-mail" class="form-control mt-4">
                             <div class="mt-4">
-                                <button type="button" class="btn btn-primary w-100">ОТПРАВИТЬ</button>
+                                <button type="button" class="btn btn-primary w-100 py-2">ОТПРАВИТЬ</button>
                             </div>
                             <div class="custom-control custom-checkbox mt-2">
                                 <input type="checkbox" class="custom-control-input  mt-4" id="customCheck4">
                                 <label class="custom-control-label mb-3" for="customCheck4">
                                     Согласие на обработку <a href="#" class="text-dark">Персональных данных</a>
                                 </label>
+                                <a href="#"></a>
                             </div>
                         </div>
                     </form>
