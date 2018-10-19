@@ -67,6 +67,9 @@ a.color-white:hover{
     height:50px;
     width: 300px;
 }
+.btn-h{
+    height:50px;
+}
 .btn{
     font-size: 16px !important;
 }
