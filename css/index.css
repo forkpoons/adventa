@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|M+PLUS+1p|Roboto&subset=cyrillic');
 
-@font-face{
-    font-family: 'Mplus 1p';
-    src: url('../font/MPLUS1p-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto&subset=cyrillic');
+body,h1, h2, h3 .mplus{
+    font-family: 'Open Sans', serif;
+
 }
-@font-face{
-    font-family: 'Mplus 1p';
-    src: url('../font/MPLUS1p-Medium.ttf');
-    font-weight: 500;
-    font-style: normal;
+.mplus {
+    font-family: 'Open Sans', serif !important;
 }
-body,h1, h2, h3 {
-    font-family: 'Mplus 1p', serif;
+h5{font-size: 18px !important}
+h3,h5{
+    font-weight: 600 !important;
 }
 p, .roboto{
     font-family: Roboto, serif;
 }
-h1{
-    font-size:52px;
-    color:#3FB24C;
+h1 {
+    font-size: 52px;
+    color: #3FB24C;
+}
+.form-control:focus{
+    border-color: white;
 }
 .upper{
     text-transform: uppercase;
@@ -29,7 +28,10 @@ h1{
     padding-top:120px;padding-bottom:120px;
 }
 .sertificat h5{
-    font-size: 19px;
+    font-size: 18px;
+}
+.sertificat li{
+    list-style-type:none;
 }
 .bg-pick{
     color:black;
@@ -58,15 +60,24 @@ a.color-white:hover{
     color:black;
     text-decoration: none;
 }
+.card, .card-header{
+    border-color: #999;
+}
+.btn-w{
+    height:50px;
+    width: 300px;
+}
+.btn{
+    font-size: 16px !important;
+}
 .btn-primary{background: #3FB24C;border-color: transparent; padding: 13px 32px;}
 .btn-primary:hover{background: #257A3C;border-color: transparent;}
 .btn-primary:not(:disabled):not(.disabled):active{background: #257A3C;border-color: transparent;}
-.btn-light{background: white;border-color: transparent;padding: 13px 32px;}
-.btn-light:hover{background: white;border-color: transparent;}
-.btn-light:not(:disabled):not(.disabled):active{background: #dddddd;border-color: transparent;}
+.btn-light{background: white;border-color: transparent;padding: 13px 32px; color:#3FB24C; font-size: 16px !important}
+.btn-light:hover{background: white;border-color: transparent;color:#3FB24C;}
+.btn-light:not(:disabled):not(.disabled):active{background: #dddddd;border-color: transparent;color:#3FB24C;}
 .btn-link{
     color:black;
-    font-size: 20px;
     text-decoration: none;border-color: transparent;
 }
 .btn-link:focus, .btn-link.focus{
@@ -160,11 +171,10 @@ a.color-white:hover{
 }
 .nav-phone{
     color:white;
-    width: 240px;
     border: 2px solid white;
     border-radius: 6px;
     padding: 11px 30px;
-    font-family: 'Mplus 1p', serif;
+    font-family: 'Open Sans', serif;
     Font-Size: 20px;
     Line-Height: 29px;
 }
@@ -197,16 +207,19 @@ a.color-white:hover{
 
 .hero h1, .hero h2, .hero h3{
     color: #257A3C;
-    font-family: 'Mplus 1p', serif;
+    font-family: 'Open Sans', serif;
+}
+.font-reg{
+    font-weight:400;
 }
 .font-medium{
-    font-weight:500;
+    font-weight:600;
 }
 .hero h1{
     background: url(../img/back-text.jpg) no-repeat center left;
     background-size: cover;
     color: #fff;
-    font-weight:500;
+    font-weight:600;
     /* -webkit-background-clip обрезает фон элемента по контуру текста */
     -webkit-text-fill-color: rgba(0, 0, 0, 0.2); /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
     -webkit-background-clip: text;
@@ -277,7 +290,30 @@ li{
 }
 .footer{
     padding-top: 80px;
-
+    background: #595959;
+}
+.rad-20{
+    border-radius: 20px 20px 20px 20px !important;
+}
+.rad-20-top{
+    border-radius: 20px 20px 0 0 !important;
+}
+.rad-20-bottom{
+    border-radius: 0 0 20px 20px !important;
+}
+.border-bottom2{
+    border-bottom: 1px solid #ddd !important;
+    border-top: 1px solid #999 !important;
+}
+.border-bottom2-h{
+    border-bottom: 1px solid #ddd !important;
+}
+.border-bottom2-t{
+    border-bottom: 0 !important;
+}
+.rad-20-top.border-bottom2-t{
+    border-radius: 19px 19px 0 0 !important;
+    border-bottom: 0 !important;
 }
 @media (min-width: 992px) {
     .buh .modal-dialog {min-width: 950px;}
