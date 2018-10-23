@@ -51,7 +51,7 @@ h1 {
     color: #3FB24C;
 }
 .color-white{
-    color:white;
+    color:white !important;
 }
 a.color-white:hover{
     color:#3FB24C;
@@ -77,8 +77,18 @@ a.color-white:hover{
 .btn-primary:hover{background: #257A3C;border-color: transparent;}
 .btn-primary:not(:disabled):not(.disabled):active{background: #257A3C;border-color: transparent;}
 .btn-light{background: white;border-color: transparent;padding: 13px 32px; color:#3FB24C; font-size: 16px !important}
-.btn-light:hover{background: white;border-color: transparent;color:#3FB24C;}
-.btn-light:not(:disabled):not(.disabled):active{background: #dddddd;border-color: transparent;color:#3FB24C;}
+.btn-light:hover{background: #3FB24C;border-color: transparent;color:#fff;}
+.btn-light.disabled, .btn-light:disabled {
+    color: #fff;
+    background-color: #3FB24C;
+    border-color: #f8f9fa;
+}
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
+    color: #fff;
+    background-color: #3FB24C;
+    border-color: #00df1e;
+}
 .btn-link{
     color:black;
     text-decoration: none;border-color: transparent;
@@ -121,12 +131,6 @@ a.color-white:hover{
     box-shadow: none;
 }.btn-light:focus, .btn-light.focus {
     box-shadow: none;
-}
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
-.show > .btn-light.dropdown-toggle {
-    color: #fff;
-    background-color: rgba(209, 209, 209, 1);
-    border-color: rgba(75, 219, 89, 1);
 }
 
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
@@ -182,9 +186,10 @@ a.color-white:hover{
     Line-Height: 29px;
 }
 .index{
-    background: #FFD8B2 url("../img/hero.png") no-repeat right;
+    background: #f4ede2 url("../img/hero.png") no-repeat right;
     background-size: cover;
     background-position-y:80px;
+    background-position-x: right;
     padding: 0;
     height:100vh;
     min-height: 700px;
@@ -325,8 +330,10 @@ li{
     .navbar-expand-md .navbar-nav{
         flex-direction: column;
     }
-    .disp-m{
+    .disp-m {
         display: none;
+    }
+    .index{
     }
 }
 @media (min-width: 992px){
@@ -339,6 +346,14 @@ li{
     .nav-s{
         display: none;
     }
+    .index{
+    }
+}
+@media (min-width: 992px) {
+    .index{
+
+        background-position-x: -650px;
+    }
 }
 @media (max-width: 1199px) {
     .request .cont{
@@ -346,6 +361,15 @@ li{
     }
     .header{
         font-size: 14px;
+    }
+
+    .index{
+        background-position-x: -830px;
+    }
+}
+@media (min-width: 1350px) {
+    .index{
+        background-position-x: right;
     }
 }
 @media (max-width: 991px){
@@ -374,6 +398,14 @@ li{
     .disp-none-img{
         display: none;
     }
+
+    .index{
+        height:540px;
+        min-height: 0;
+        background: #f4ede2 url("../img/hero-m.jpg") no-repeat right;
+        background-position-y: 80px;
+        background-size: cover;
+    }
 }
 @media (max-width: 767px){
     .disp-none{
@@ -384,10 +416,6 @@ li{
     }
     .how img{
         transform: rotate(90deg);
-    }
-    .index{
-        height:520px;
-        min-height: 0;
     }
     .text-center-md{
         text-align: center;
@@ -415,5 +443,17 @@ li{
     .bg-pick-map{
         color:black;
         background: white;
+    }
+}
+@media (max-width: 500px){
+
+    .hero h1{
+        font-size: 20px;
+    }
+    .hero p{
+        font-size:10px
+    }
+    .hero h3{
+        font-size: 15px;
     }
 }
