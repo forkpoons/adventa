@@ -213,7 +213,7 @@ a.color-white:hover{
     min-height: 700px;
 }
 .index404{
-    background: #f6f0e6 url("../img/404-back.png") 0 100%  no-repeat;
+    background: #f6f0e6 url("../img/404-back.png") 100% 100%  no-repeat;
     background-size: cover;
     padding: 0;
     height:100vh;
@@ -456,7 +456,9 @@ li{
     -webkit-transition-delay: 0, 0.3s;
     transition-delay: 0, 0.3s;
 }
-
+.modal .custom-control-label{
+    margin-left: -100px;
+}
 
 
 @media (min-width: 992px) {
@@ -557,6 +559,9 @@ li{
     }
 }
 @media (max-width: 767px){
+    .hero404{
+        margin-top: 20%;
+    }
     .disp-none{
         display: none;
     }
@@ -615,6 +620,12 @@ li{
     }
     .index{
         height: 320px;
+    }
+    .btn-w{
+        width: 100%;
+    }
+    .modal .custom-control-label{
+        margin-left: 0px;
     }
 }
 @media (max-width: 360px){

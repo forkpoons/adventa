@@ -900,17 +900,17 @@
     </div>
 
     <div class="modal fade" id="consultation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 555px">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content p-5 text-center border-dark">
                 <h3 class="color-green text-center mt-4" style="font-size: 20px">ОСТАВИТЬ ЗАЯВКУ</h3>
                 <form action="./send.php" method="post" id="request-m">
                     <input type="text" placeholder="Ваше имя" class="form-control mt-4 btn-w mx-auto" name="fnm" form="request-m">
                     <input type="tel" placeholder="Ваш телефон" class="form-control mt-4 btn-w mx-auto" name="phone" form="request-m">
                     <input type="email" placeholder="Ваш e-mail" class="form-control mt-4 btn-w mx-auto" name="email" form="request-m">
-                    <div class="custom-control custom-checkbox mt-2" >
+                    <div class="custom-control custom-checkbox mt-2 " >
                         <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2" name="check">
                         <input type="hidden" name="hidden" value="true">
-                        <label class="custom-control-label" for="customCheck2" style="margin-left:-100px; font-size:14px; text-align: left">Я согласен на обработку<br> <a href="./privacy-policy.html" class="text-dark">Персональных данных</a> </label>
+                        <label class="custom-control-label " for="customCheck2" style="font-size:14px; text-align: left">Я согласен на обработку<br> <a href="./privacy-policy.html" class="text-dark">Персональных данных</a> </label>
                     </div>
                     <button type="submit" class="btn btn-primary mt-3 btn-w mb-4" onclick="return Formdata(this.form);">ОТПРАВИТЬ</button>
                 </form>
