@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=0.9">
-    <title>Adventa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Адвента АСБ</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/x-icon.png" type="image/x-icon">
     <!--Подключение 2гис-->
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
     <script>
@@ -14,34 +15,35 @@
             map = DG.map('map', {
                 center: [ 56.505262,85.018929],
                 zoom: 16
-
-
             });
             DG.marker([56.505269, 85.017935]).addTo(map).bindPopup('Иркутский тракт, 53Б');
         });
     </script>
-
+		
 </head>
 <body>
     <div class="container-fluid d-inline-block index">
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light p-0 ">
                 <div class="container ">
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <div class="navbar-brand">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
 
-                    <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon color-white"></span>
-                    </button>
+                    </div><span class="nav-phone-m"><a href="tel:+73822479520" class="color-white">+7 (3822) 47-95-20</a></span>
+
+                        <button class="cmn-toggle-switch cmn-toggle-switch__htx" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span>toggle menu</span>
+                        </button>
                     <div class="collapse navbar-collapse navbar-expand-md pb-5 pb-lg-0 zindex-tooltip" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto nav-dropdown">
                             <li class="nav-item ml-5 ml-lg-0">
                                 <a class="nav-link mt-4" href="#about">О НАС</a>
                             </li>
                             <li class="nav-item ml-5 ml-lg-0 nav-s">
-                                <a class="nav-link mt-4" href="#servis">БУХГАЛТЕРСКИЕ УСЛУГИ</a>
+                                <a class="nav-link mt-4" href="#servis-m">БУХГАЛТЕРСКИЕ УСЛУГИ</a>
                             </li>
                             <li class="nav-item ml-5 ml-lg-0 nav-s">
-                                <a class="nav-link mt-4" href="#sertificat">УСЛУГИ ПО СЕРТИФИКАЦИИ</a>
+                                <a class="nav-link mt-4" href="#sertificat-m">УСЛУГИ ПО СЕРТИФИКАЦИИ</a>
                             </li>
                             <li class="nav-item ml-5 ml-lg-0">
                                 <a class="nav-link mt-4" href="#block1">С НАМИ ВЫГОДНО</a>
@@ -54,10 +56,10 @@
                                     <div class="row">
                                         <div class="col-12 col-md-6">
                                             <h3 class="dropdown-header hover-green "><a class="hover-green" href="#servis">БУХГАЛТЕРСКИЕ УСЛУГИ</a></h3>
-                                            <a class="dropdown-item hover-green lato" href="#servis">Ведение бухгалтерского и<br> налогового учета ЮЛ и ИП</a>
-                                            <a class="dropdown-item hover-green lato" href="#servis">Составление и отправка отчетности</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Ведение бухгалтерского и<br> налогового учёта ЮЛ и ИП</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Составление и отправка отчётности</a>
                                             <a class="dropdown-item hover-green lato" href="#servis">Регистрация ООО и ИП</a>
-                                            <a class="dropdown-item hover-green lato" href="#servis">Восстановление бухгалтерского учета</a>
+                                            <a class="dropdown-item hover-green lato" href="#servis">Восстановление бухгалтерского учёта</a>
                                             <a class="dropdown-item hover-green lato" href="#servis">Кадровый учет</a>
                                         </div>
                                         <div class="col-12 col-md-6">
@@ -80,14 +82,13 @@
                 </div>
             </nav>
         </div>
-
         <div class="container hero">
             <div class="align-self-center">
             <h1>АДВЕНТА — АГЕНТСТВО <br>СОДЕЙСТВИЯ БИЗНЕСУ</h1>
             <p>Юридическая помощь &nbsp;<span class="d-block d-md-none"> </span> Бухгалтерские услуги &nbsp;<span class="d-block d-md-none"> </span> Сертификация</p>
             <h3>АДВЕНТА АСБ —<span class="d-block d-md-none"> </span> КОМАНДА ВАШЕГО УСПЕХА</h3>
                 <span  id="about"></span>
-            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            <button type="button" class="btn btn-primary d-block" data-toggle="modal" data-target="#consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
         </div>
     </div>
@@ -124,7 +125,7 @@
                     <h2 class="pb-4"><span class="color-green">РЕШАЕМ</span> ЛЮБЫЕ ЗАДАЧИ</h2>
                     <div class="row mb-4 mt-5">
                         <div class="col-xl-3 col-md-12 color-green font-medium mr-2">БУХГАЛТЕРСКИЕ УСЛУГИ</div>
-                        <div class="col-xl-7 col-sm-12 col-md-10 roboto ml-xl-5">Ведение бухгалтерского и налогового учета<br> Составление и отправка отчетности<br> Восстановление бухучета<br>
+                        <div class="col-xl-7 col-sm-12 col-md-10 roboto ml-xl-5">Ведение бухгалтерского и налогового учёта<br> Составление и отправка отчётности<br> Восстановление бухучета<br>
                             Регистрация ООО и ИП </div>
                     </div>
                     <div class="row mb-4">
@@ -147,12 +148,12 @@
             <div class="card">
                 <div class="card-header bg-white" id="heading-m1">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m1" role="button" aria-expanded="false" aria-controls="collapse-m1">
-                            <div class="col-7">
-                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
+                        <a class="row p-0 btn-link  font-16" data-toggle="collapse" href="#collapse-m1" role="button" aria-expanded="false" aria-controls="collapse-m1">
+                            <div class="col-8">
+                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЁТА ИП
                             </div>
                             <div class="col">
-                                от 1 000 руб
+                                от 1 000 р
                             </div>
                         </a>
                     </h5>
@@ -160,355 +161,400 @@
 
                 <div id="collapse-m1" class="collapse show" aria-labelledby="heading-m1" data-parent="#accordion-m1">
                     <div class="card-body">
-                        Полный комплекс услуг, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчетности. Мы практикуем индивидуальный подход к каждому клиенту.
+                        Наша компания оказывает полный комплекс услуг в области бухгалтерского учёта, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчётности. Мы практикуем индивидуальный подход к каждому клиенту.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-white" id="heading-m2">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m2" role="button" aria-expanded="false" aria-controls="collapse-m2">
-                            <div class="col-7">
-                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
+                        <a class="row p-0 btn-link  font-16" data-toggle="collapse" href="#collapse-m2" role="button" aria-expanded="false" aria-controls="collapse-m2">
+                            <div class="col-8">
+                                ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЁТА ЮЛ
                             </div>
                             <div class="col">
-                                от 500 руб
+                                от 500 р
                             </div>
                         </a>
                     </h5>
                 </div>
                 <div id="collapse-m2" class="collapse" aria-labelledby="heading-m2" data-parent="#accordion-m1">
                     <div class="card-body">
-                        ИП не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учета значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учета позволяет оценить состояние своего бизнеса и определить уровень его доходности.
+                        Согласно российскому законодательству индивидуальные предприниматели не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учёта значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учёта позволяет индивидуальному предпринимателю оценить состояние своего бизнеса и определить уровень его доходности. И наша компания с удовольствием поможет вам в этом.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-white" id="heading-m3">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m3" role="button" aria-expanded="false" aria-controls="collapse-m3">
-                            <div class="col-7">
-                                СОСТАВЛЕНИЕ И ОТПРИВЕКА ОТЧЕТНОСТИ
+                        <a class="row p-0 btn-link font-16 " data-toggle="collapse" href="#collapse-m3" role="button" aria-expanded="false" aria-controls="collapse-m3">
+                            <div class="col-8">
+                                СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЁТНОСТИ
                             </div>
                             <div class="col">
-                                от 200 руб
+                                от 200 р
                             </div>
                         </a>
                     </h5>
                 </div>
                 <div id="collapse-m3" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
                     <div class="card-body">
-                        Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчетов, сформировать и отправить налоговые декларации в установленные сроки.
+                        Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчётов, сформировать и отправить налоговые декларации в установленные сроки.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-white" id="heading-m4">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m4" role="button" aria-expanded="false" aria-controls="collapse-m4">
-                            <div class="col-7">
+                        <a class="row p-0 btn-link  font-16" data-toggle="collapse" href="#collapse-m4" role="button" aria-expanded="false" aria-controls="collapse-m4">
+                            <div class="col-8">
                                 РЕГИСТРАЦИЯ ООО И ИП
                             </div>
                             <div class="col">
-                                от 500 руб
+                                от 500 р
                             </div>
                         </a>
                     </h5>
                 </div>
                 <div id="collapse-m4" class="collapse" aria-labelledby="heading-m4" data-parent="#accordion-m1">
                     <div class="card-body">
-                        Помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учета.
+                        Наша команда готова оказывать помощь не только уже действующим организациям и ИП, но и только планирующим создать свой бизнес. В комплекс услуг по регистрации входит: помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учёта.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-white" id="heading-m5">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m5" role="button" aria-expanded="false" aria-controls="collapse-m5">
-                            <div class="col-7">
-                                ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА
+                        <a class="row p-0 btn-link  font-16" data-toggle="collapse" href="#collapse-m5" role="button" aria-expanded="false" aria-controls="collapse-m5">
+                            <div class="col-8">
+                                ВОССТАНОВЛЕНИЕ БУХГАЛТЕРСКОГО УЧЁТА
                             </div>
                             <div class="col">
-                                от 2 000 руб
+                                от 2 000 р
                             </div>
                         </a>
                     </h5>
                 </div>
                 <div id="collapse-m5" class="collapse" aria-labelledby="heading-m3" data-parent="#accordion-m1">
                     <div class="card-body">
-                        Анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учета в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчеты.
+                        Если в вашей организации в течение определённого времени не велся бухгалтерский учет или велся неправильно и неполноценно, наша команда предлагает вам воспользоваться услугой восстановления бухгалтерского учёта.<br>
+                        В процесс восстановления бухгалтерского учёта входит анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учёта в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчёты.
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header bg-white" id="heading-m6">
                     <h5 class="mb-0">
-                        <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse-m6" role="button" aria-expanded="false" aria-controls="collapse-m6">
-                            <div class="col-7">
+                        <a class="row p-0 btn-link  font-16" data-toggle="collapse" href="#collapse-m6" role="button" aria-expanded="false" aria-controls="collapse-m6">
+                            <div class="col-8">
                                 КАДРОВЫЙ УЧЕТ
                             </div>
                             <div class="col">
-                                от 350 руб
+                                от 350 р
                             </div>
                         </a>
                     </h5>
                 </div>
                 <div id="collapse-m6" class="collapse" aria-labelledby="heading-m6" data-parent="#accordion-m1">
                     <div class="card-body">
-                        Систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет,                        зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
+                        С того момента как организация или индивидуальный предприниматель начинает использовать наемный труд работников, возникает необходимость ведения кадрового учёта. Ведение кадрового учёта предполагает систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет, зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary mx-auto mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+        <button type="button" class="btn btn-primary mx-auto mt-4 btn-w" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
     </div>
 
-    <!--УСЛУГИ ПО СЕРТИФИКАЦИИ мобильныя версия-->
+    <!--УСЛУГИ ПО СЕРТИФИКАЦИИ мобильная версия-->
     <div class="container text-center px-main disp-m px-0" id="sertificat-m">
         <h2>УСЛУГИ ПО <span class="color-green">СЕРТИФИКАЦИИ</span></h2>
         <div class="accordion bg-white text-left" id="accordion-m2">
             <div class="card">
                 <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m21" role="button" aria-expanded="false" aria-controls="collapse-m21">
                     <div class="card-header bg-white" id="heading-m21">
-                        <h5 class="row mb-0">
-                             <div class="col-7">
-                                    СЕРТИФИКАЦИЯ И ДИКЛОРАЦИЯ
+                        <h5 class="row mb-0  font-normal font-16">
+                             <div class="col-8">
+                                    СЕРТИФИКАЦИЯ И ДЕКЛАРАЦИЯ
                                 </div>
-                                <div class="col">
-                                    от 6 000 руб
-                                </div>
+                            <div class="col">от 6 000 р</div>
                         </h5>
                     </div>
                 </a>
                 <div id="collapse-m21" class="collapse show sert-m" aria-labelledby="heading-m21" data-parent="#accordion-m2">
 
-                        <div class="card">
-                            <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m22" role="button" aria-expanded="false" aria-controls="collapse-m22">
-                                <div class="card-header bg-white" id="heading-m22">
-                                    <h5 class="row mb-0">
-                                        <div class="col-7">
-                                            СЕРТИФИКАТ СООТВЕТСТВИЯ
-                                        </div>
-                                        <div class="col">
-                                            от 10 000 руб
-                                        </div>
-                                    </h5>
-                                </div>
-                            </a>
-                            <div id="collapse-m22" class="collapse" aria-labelledby="heading-m22" >
-                                <div class="card-body">
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-11" role="button" aria-expanded="false" aria-controls="collapsem-11">
+                            <div class="card-header bg-white" id="headingm-11">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        СЕРТИФИКАТ СООТВЕТСТВИЯ
+                                    </div>
+                                    <div class="col">
+                                        от 10 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-11" class="collapse" aria-labelledby="heading-m22" >
+                            <div class="card-body">
 
-                                    <div class="row">
-                                        <div class="col-7">Оборудование</div>
-                                        <div class="col"> от 25 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Техника (бытовая, электрика)</div>
-                                        <div class="col"> от 25 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Игрушки</div>
-                                        <div class="col"> от 19 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Одежда</div>
-                                        <div class="col"> от 18 000 руб</div>
-                                    </div>
-                                </div>
+                                Сертификат соответствия – документ, удостоверяющий соответствие объекта требованиям технических регламентов (ТР ТС), положениям стандартов, своду правил или условиям договоров. Иными словами сертификат соответствия эффективный способ подтвердить качество своей продукции.
                             </div>
-                        </div>
-                        <div class="card">
-                            <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m23" role="button" aria-expanded="false" aria-controls="collapse-m23">
-                                <div class="card-header bg-white" id="heading-m23">
-                                    <h5 class="row mb-0">
-                                        <div class="col-7">
-                                            ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
-                                        </div>
-                                        <div class="col">
-                                            от 6 000 руб
-                                        </div>
-                                    </h5>
-                                </div>
-                            </a>
-                            <div id="collapse-m23" class="collapse" aria-labelledby="heading-m23">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-7">Оборудование</div>
-                                        <div class="col"> от 9 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Техника (бытовая, электрика)</div>
-                                        <div class="col"> от 9 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Мебель</div>
-                                        <div class="col"> от 10 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Одежда</div>
-                                        <div class="col"> от 8 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Упаковка</div>
-                                        <div class="col"> от 8 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Посуда</div>
-                                        <div class="col"> от 6 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Хозяйственно-бытовые товары</div>
-                                        <div class="col"> от 6 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Косметика</div>
-                                        <div class="col"> от 9 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-7">Пищевая продукция</div>
-                                        <div class="col"> от 8 000 руб</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <a class="p-0 btn-link ">
-                                <div class="card-header bg-white" id="heading-m24">
-                                    <h5 class="row mb-0">
-                                        <div class="col-7">
-                                            СВИДЕТЕЛЬСТВОО ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
-                                        </div>
-                                        <div class="col">
-                                            от 24 000 руб
-                                        </div>
-                                    </h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a class="p-0 btn-link ">
-                                <div class="card-header bg-white" id="heading-m25">
-                                    <h5 class="row mb-0">
-                                        <div class="col-7">
-                                            ОТКАЗНОЕ ПИСЬМО
-                                        </div>
-                                        <div class="col">
-                                            от 10 000 руб
-                                        </div>
-                                    </h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a class="p-0 btn-link " >
-                                <div class="card-header bg-white" id="heading-m26">
-                                    <h5 class="row mb-0">
-                                        <div class="col-7">
-                                            ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
-                                        </div>
-                                        <div class="col">
-                                            от 15 000 руб
-                                        </div>
-                                    </h5>
-                                </div>
-                            </a>
                         </div>
                     </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-12" role="button" aria-expanded="false" aria-controls="collapsem-12">
+                            <div class="card-header bg-white" id="headingm-12">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
+                                    </div>
+                                    <div class="col">
+                                        от 6 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-12" class="collapse" aria-labelledby="headingm-12">
+                            <div class="card-body">
+                                Декларация соответствия ГОСТ - документ, удостоверяющий качество продукции, не подлежащей обязательной сертификации, но попавшей в перечень обязательного декларирования соответствия. То есть декларация о соответствии ГОСТ Р служит альтернативным подтверждающим документом со стороны импортера или производителя.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-13" role="button" aria-expanded="false" aria-controls="collapsem-13">
+                            <div class="card-header bg-white" id="headingm-13">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
+                                    </div>
+                                    <div class="col">
+                                        от 24 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-13" class="collapse" aria-labelledby="headingm-13" >
+                            <div class="card-body">
+                                Свидетельство о государственной регистрации продукции в Роспотребнадзоре - это документ, удостоверяющий соответствие продукции единым санитарным нормам и техническим регламентам Таможенного Союза.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-14" role="button" aria-expanded="false" aria-controls="collapsem-14">
+                            <div class="card-header bg-white" id="headingm-14">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ОТКАЗНОЕ ПИСЬМО
+                                    </div>
+                                    <div class="col">
+                                        от 10 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-14" class="collapse" aria-labelledby="headingm-14">
+                            <div class="card-body">
+                                Отказное письмо – это официальный разъяснительный документ, выданный органом по сертификации, в котором сообщается, что продукция не подлежит обязательной сертификации или декларированию соответствия
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-15" role="button" aria-expanded="false" aria-controls="collapsem-15">
+                            <div class="card-header bg-white" id="headingm-15">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
+                                    </div>
+                                    <div class="col">
+                                        от 15 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-15" class="collapse" aria-labelledby="headingm-15" >
+                            <div class="card-body">
+                                Экспертное заключение Роспотребнадзора – это документ, удостоверяющий санитарно-гигиеническую и эпидемиологическую безопасность заявленной продукции.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
                 <a class="p-0 btn-link " data-toggle="collapse" href="#collapse-m27" role="button" aria-expanded="false" aria-controls="collapse-m27">
                     <div class="card-header bg-white" id="heading-m27">
-                        <h5 class="mb-0 row">
-                                <div class="col-7">
+                        <h5 class="mb-0 row font-normal font-16">
+                                <div class="col-8">
                                     СЕРТИФИКАЦИЯ МЕНЕДЖМЕНТА
                                 </div>
-                                <div class="col">
-                                    от 12 500 руб
-                                </div>
+                            <div class="col">от 12 500 р</div>
                         </h5>
                     </div>
                 </a>
-                <div id="collapse-m27" class="collapse" aria-labelledby="heading-m27" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-7">ISO 9001</div>
-                            <div class="col"> от 12 500 руб</div>
+                <div id="collapse-m27" class="collapse  sert-m" aria-labelledby="heading-m27" data-parent="#accordion-m2">
+
+
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-21" role="button" aria-expanded="false" aria-controls="collapsem-21">
+                            <div class="card-header bg-white" id="headingm-21">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ISO 9001
+                                    </div>
+                                    <div class="col">
+                                        от 12 500 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-21" class="collapse" aria-labelledby="heading-m22" >
+                            <div class="card-body">
+                                Сертификат ИСО 9001 - это официальный документ, гарантирующий высокую степень надежности Вашего предприятия и качества выпускаемого товара, продукта/оказываемой услуги.
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">ISO 14001</div>
-                            <div class="col"> от 14 000 руб</div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-22" role="button" aria-expanded="false" aria-controls="collapsem-22">
+                            <div class="card-header bg-white" id="headingm-22">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ISO 14001
+                                    </div>
+                                    <div class="col">
+                                        от 14 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-22" class="collapse" aria-labelledby="headingm-12">
+                            <div class="card-body">
+                                Сертификат ИСО 14001 - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р ИСО 14001 СЭМ «Системы экологического менеджмента».
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">OHSAS 18001</div>
-                            <div class="col"> от 16 000 руб</div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-23" role="button" aria-expanded="false" aria-controls="collapsem-23">
+                            <div class="card-header bg-white" id="headingm-23">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        OHSAS 18001
+                                    </div>
+                                    <div class="col">
+                                        от 16 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-23" class="collapse" aria-labelledby="headingm-23" >
+                            <div class="card-body">
+                                Сертификат ОХСАС (OHSAS 18001) - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р 54934-2012 Системы менеджмента охраны здоровья и безопасности персонала (OHSAS 18001:2007).
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">ISO 22000</div>
-                            <div class="col"> от 20 000 руб</div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-24" role="button" aria-expanded="false" aria-controls="collapsem-24">
+                            <div class="card-header bg-white" id="headingm-24">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        ISO 22000
+                                    </div>
+                                    <div class="col">
+                                        от 20 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-24" class="collapse" aria-labelledby="headingm-24">
+                            <div class="card-body">
+                                Сертификат ИСО 22000 - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р ИСО 22000-2007 «Системы менеджмента безопасности пищевой продукции. Требования к организациям, участвующим в цепи создания пищевой продукции» ISO 22000.</div>
                         </div>
-                        <div class="row">
-                            <div class="col-7">Интегрированная система менеджмента</div>
-                            <div class="col"> от 31 000 руб</div>
+                    </div>
+                    <div class="card border-0 border-bottom2-h">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-25" role="button" aria-expanded="false" aria-controls="collapsem-25">
+                            <div class="card-header bg-white" id="headingm-25">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        Интегрированная система менеджмента
+                                    </div>
+                                    <div class="col">
+                                        от 31 000 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-25" class="collapse" aria-labelledby="headingm-25" >
+                            <div class="card-body">
+                                Интегрированные системы менеджмента (ИСМ) - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р 53893-2010 «Руководящие принципы и требования к интегрированным системам менеджмента».
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
             <div class="card">
                 <a class=" p-0 btn-link " data-toggle="collapse" href="#collapse-m28" role="button" aria-expanded="false" aria-controls="collapse-m28">
                     <div class="card-header bg-white" id="heading-m28">
-                        <h5 class="mb-0 row">
-                                <div class="col-7">
+                        <h5 class="mb-0 row font-normal font-16">
+                                <div class="col-8">
                                     ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ
                                 </div>
-                                <div class="col">
-                                    от 9 500 руб
-                                </div>
+                            <div class="col">от 9 500 р</div>
                         </h5>
                     </div>
                 </a>
-                <div id="collapse-m28" class="collapse" aria-labelledby="heading-m26" data-parent="#accordion-m2">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-7">Разработка технических условий</div>
-                            <div class="col"> от 9 500 руб</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-7">Регистрация технических условий</div>
-                            <div class="col"> от 12 000 руб</div>
+                <div id="collapse-m28" class="collapse  sert-m" aria-labelledby="heading-m26" data-parent="#accordion-m2">
+                    <div class="card">
+                        <a class="p-0 btn-link " data-toggle="collapse" href="#collapsem-31" role="button" aria-expanded="false" aria-controls="collapsem-31">
+                            <div class="card-header bg-white" id="headingm-31">
+                                <h5 class="row mb-0 font-normal">
+                                    <div class="col-8">
+                                        Разработка и регистрация технических условий
+                                    </div>
+                                    <div class="col">
+                                        от 9 500 р
+                                    </div>
+                                </h5>
+                            </div>
+                        </a>
+                        <div id="collapsem-31" class="collapse" aria-labelledby="headingm-31">
+                            <div class="card-body">
+                                Технические условия - это внутренний документ организации, затрагивающий все аспекты производственного процесса и регламентирующий основные технические требования, к выпускаемой продукции. Обязательными разделами технических условий являются: основные параметры и характеристики продукции, требования к сырью, материалам, комплектность, маркировка, упаковка, требования безопасности, требования охраны окружающей среды, правила приемки, методы контроля, транспортирование и хранение, указания по эксплуатации, гарантии изготовителя. Технические условия могут разрабатываться на отдельные виды продукции, или на несколько однородных видов продукции, так называемые групповые ТУ.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary mx-5 mt-4" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
+        <button type="button" class="btn btn-primary mt-4 btn-w" data-toggle="modal" data-target="#consultation">ОСТАВИТЬ ЗАЯВКУ</button>
     </div>
 
     <!--ОСТАВЬТЕ ЗАЯВКУ-->
     <div class="container-fluid request p-0 disp-none" >
         <div class="cont">
             <div class="row justify-content-around text-center m-0">
-                <div class=" col-md-5 col-xl-3 col-8">
+                <div class=" col-md-5 col-lg-5 col-xl-3 col-8">
                     <h2 class="pb-5">ОСТАВЬТЕ ЗАЯВКУ</h2>
-                    <form class="mt-3" action="send.php" method="post" id="request">
-                        <input type="name" placeholder="Ваше имя" class="form-control btn-h color-white" name="name" form="request" pattern="^[A-Za-zА-Яа-яЁё]{2,}">
-                        <input type="tel" placeholder="Ваш телефон" class="form-control btn-h color-white" name="tel" form="request" pattern="^[0-9+]{12}" >
+                    <form class="mt-3" action="./send.php" method="post" id="request">
+                        <input type="name" placeholder="Ваше имя" class="form-control btn-h color-white" name="fnm" form="request" >
+                        <input type="tel" placeholder="Ваш телефон" class="form-control btn-h color-white" name="phone" form="request"  >
                         <input type="email" placeholder="Ваш e-mail" class="form-control btn-h color-white" name="email" form="request" >
-                        <textarea class="form-control color-white" placeholder="Ваш вопрос" rows="3" name="comment" form="request" pattern="^[A-Za-zА-Яа-яЁё]+$"></textarea>
+                        <textarea class="form-control color-white" placeholder="Ваш вопрос" rows="3" name="comment" form="request" ></textarea>
                         <div class="custom-control custom-checkbox mt-4 text-left">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" name="check">
+                            <input type="hidden" name="hidden" value="true">
                             <label class="custom-control-label" for="customCheck1">
-                                Я согласен на обработку <a href="privacy-policy.html">Персональных данных</a><br>
+                                Я согласен на обработку <a href="./privacy-policy.html">Персональных данных</a><br>
                                 <small style="font-size: 10px !important">В соответствии с ФЗ РФ от 27 июля 2006 г. №152-ФЗ «О персональных данных».</small>
                                 </label>
-                        </div><span id="block1"></span>
-                        <input type="submit" class="btn btn-light mt-4 px-5  btn-w" value="ОТПРАВИТЬ" style="padding:13px 100px">
+                        </div>
+                        <input type="submit" class="btn btn-light mt-4 px-5  btn-w" value="ОТПРАВИТЬ" style="padding:13px 100px" onclick="return Formdata(this.form);">
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    <span id="block1"></span>
     <!--ПОЧЕМУ С НАМИ-->
     <div class="container text-center px-main"  >
         <h2 class="pb-3">ПОЧЕМУ С НАМИ <span class="color-green">ВЫГОДНО</span></h2>
@@ -530,7 +576,7 @@
                         <img src="img/icon-2.png" alt="">
                     </div>
                     <div class="col-9 col-md-12 col-lg-9">
-                        <h5 class="color-green">СТРОГОЕ СООТВЕТСВИЕ ЗАКОНОДАТЕЛЬСТВУ РФ</h5>
+                        <h5 class="color-green">СТРОГОЕ СООТВЕТСТВИЕ ЗАКОНОДАТЕЛЬСТВУ РФ</h5>
                         <p class="roboto">Систематично прослеживаем изменения в законодательстве</p>
                     </div>
                 </div>
@@ -589,7 +635,7 @@
     <div class="container-fluid bg-pick how px-main" id="how">
         <div class="container text-center">
             <h2>КАК МЫ <span class="color-green">РАБОТАЕМ</span></h2>
-            <div class="row mt-5 roboto">
+            <div class="row mt-5">
                 <div class="col-12 col-md mt-3">
                     <h5 class="color-green">
                         ЗАЯВКА
@@ -639,7 +685,7 @@
     <!--ПРЕИМУЩЕСТВА ВЕДЕНИЯ БУХГАЛТЕРСКОГО УЧЕТА У НАС-->
     <div class="container-fluid advantages disp-none py-5">
         <div class="container text-center py-5 ">
-            <h2 class="pt-4 pb-0"><span class="color-green">ПРЕИМУЩЕСТВА</span> ВЕДЕНИЯ БУХГАЛТЕРСКОГО УЧЕТА У НАС</h2>
+            <h2 class="pt-4 pb-0"><span class="color-green">ПРЕИМУЩЕСТВА</span> ВЕДЕНИЯ БУХГАЛТЕРСКОГО УЧЁТА У НАС</h2>
             <div class="row justify-content-around mt-5 font-medium">
                 <div class="col-4">
                     <img src="img/calc-icon-1.png" class="d-block m-auto py-4" alt="">
@@ -651,7 +697,7 @@
                 </div>
                 <div class="col-4 ">
                     <img src="img/calc-icon-3.png" class="d-block m-auto py-4" alt="">
-                    ГАРАНТИРОВАННАЯ<br> <p class="roboto font-reg">верность ведения бухгалтерского учета</p>
+                    ГАРАНТИЯ<br> <p class="roboto font-reg">верности ведения<br>бухгалтерского учёта</p>
                 </div>
             </div>
         </div>
@@ -672,7 +718,7 @@
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП</h5>
+                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЁТА ИП</h5>
                     <h5 class="bg-green pt-3 pb-3"><span style="font-size: 20px !important">от 500 руб</span></h5>
                     <button type="button" class="btn btn-primary mx-5 mb-5" style="margin-top:40px"  data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(2);">
                         ПОДРОБНЕЕ
@@ -681,7 +727,7 @@
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЕТНОСТИ</h5>
+                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЁТНОСТИ</h5>
                     <h5 class="bg-green pt-3 pb-3"><span style="font-size: 20px !important">от 200 руб</span></h5>
                     <button type="button" class="btn btn-primary mx-5 mb-5" style="margin-top:40px" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(3);">
                         ПОДРОБНЕЕ
@@ -699,7 +745,7 @@
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
-                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">ВОССТАНОВЛЕНИЕ<br> БУХГАЛТЕРСКОГО УЧЕТА</h5>
+                    <h5 class="card-title mt-5" style="height: 50px; margin-bottom:36px;">ВОССТАНОВЛЕНИЕ<br> БУХГАЛТЕРСКОГО УЧЁТА</h5>
                     <h5 class="bg-green pt-3 pb-3"><span style="font-size: 20px !important">от 200 руб</span></h5>
                     <button type="button" class="btn btn-primary m-5 mb-5" style="margin-top:40px" data-toggle="modal" data-target="#Accounting2"  onclick="stratification2(5);">
                         ПОДРОБНЕЕ
@@ -721,7 +767,7 @@
     <!--ЧТО ДАЕТ СЕРТИФИКАЦИЯ-->
     <div class="container-fluid sert disp-none  py-5">
         <div class="container text-center py-5">
-            <h2 class="pt-4 pb-0">ЧТО ДАЕТ <span class="color-green">СЕРТИФИКАЦИЯ</span></h2>
+            <h2 class="pt-4 pb-0">ЧТО ДАЁТ <span class="color-green">СЕРТИФИКАЦИЯ</span></h2>
             <div class="row justify-content-around mt-5 font-medium">
                 <div class="col-4">
                     <img src="img/sert-icon-1.png" class="d-block m-auto py-4" alt="">
@@ -746,7 +792,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4">СЕРТИФИКАЦИЯ<br> И ДЕКЛАРАЦИЯ</h5>
-                    <h5 class="bg-green pt-3 pb-3 my-3" ><span style="font-size: 20px !important">от 1 000 руб</span></h5>
+                    <h5 class="bg-green pt-3 pb-3 my-3" ><span style="font-size: 20px !important">от 6 000 руб</span></h5>
                     <ul class="spec mt-3 roboto">
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> Сертификат соответствия</li>
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> Декларация соответствия</li>
@@ -760,7 +806,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4">СЕРТИФИКАЦИЯ<br> МЕНЕДЖМЕНТА</h5>
-                    <h5 class="bg-green pt-3 pb-3 my-3"><span style="font-size: 20px !important">от 500 руб</span></h5>
+                    <h5 class="bg-green pt-3 pb-3 my-3"><span style="font-size: 20px !important">от 12 500 руб</span></h5>
                     <ul class="spec mt-3 roboto">
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> ISO 9001</li>
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> ISO 14001</li>
@@ -774,7 +820,7 @@
             <div class="col-12 col-md-8 col-lg-5 col-xl-4 mt-5">
                 <div class="card">
                     <h5 class="card-title mt-5 mb-4">ТЕХНИЧЕСКАЯ<br> ДОКУМЕНТАЦИЯ</h5>
-                    <h5 class="bg-green pt-3 pb-3 my-3"><span style="font-size: 20px !important">от 500 руб</span></h5>
+                    <h5 class="bg-green pt-3 pb-3 my-3"><span style="font-size: 20px !important">от 9 500 руб</span></h5>
                     <ul class="spec mt-3 roboto">
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> Разработка технических<br> условий</li>
                         <li class="mt-1" style="margin-left: -50px"><span class="font-weight-bold">•</span> Регистрация технических<br> условий</li>
@@ -799,7 +845,7 @@
                         <div class="col-2">
                             <img src="img/map-icon-1.png" alt="">
                         </div>
-                        Адрес:<br> г. Томск Иркутский тракт, 53Б
+                        Адрес:<br> г. Томск, Иркутский тракт, 53Б
                     </div>
                     <div class="row mt-5">
                         <div class="col-2">
@@ -833,7 +879,7 @@
                     <a href="index.html"><img src="img/logo-light.png" alt="" style="max-width: 140px; margin-top:-15px"></a><br>
                     <p class="mt-3 mplus">Адвента — Агентство<br>содействия бизнесу</p>
                     <small class="mt-4 d-block">г. Томск, 2018 г.</small>
-                    <a href="privacy-policy.html" class="color-white d-block"><small>Политика кофиденциальности</small></a>
+                    <a href="privacy-policy.html" class="color-white d-block"><small>Политика конфиденциальности</small></a>
                 </div>
                 <div class="col-12 col-md">
                     <a href="#about" class="color-white d-block mt-2">О нас</a>
@@ -857,15 +903,16 @@
         <div class="modal-dialog modal-dialog-centered" role="document" style="width: 555px">
             <div class="modal-content p-5 text-center border-dark">
                 <h3 class="color-green text-center mt-4" style="font-size: 20px">ОСТАВИТЬ ЗАЯВКУ</h3>
-                <form action="send.php" method="post" id="request-m">
-                    <input type="text" placeholder="Ваше имя" class="form-control mt-4 btn-w mx-auto" name="name" form="request-m"pattern="^[A-Za-zА-Яа-яЁё]{2,}">
-                    <input type="tel" placeholder="Ваш телефон" class="form-control mt-4 btn-w mx-auto" name="tel" form="request-m"pattern="^[0-9+]{12}" >
+                <form action="./send.php" method="post" id="request-m">
+                    <input type="text" placeholder="Ваше имя" class="form-control mt-4 btn-w mx-auto" name="fnm" form="request-m">
+                    <input type="tel" placeholder="Ваш телефон" class="form-control mt-4 btn-w mx-auto" name="phone" form="request-m">
                     <input type="email" placeholder="Ваш e-mail" class="form-control mt-4 btn-w mx-auto" name="email" form="request-m">
-                    <div class="custom-control custom-checkbox mt-2">
-                        <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2" style="margin-left:-100px; font-size:14px; text-align: left">Я согласен на обработку<br> <a href="#" class="text-dark">Персональных данных</a> </label>
+                    <div class="custom-control custom-checkbox mt-2" >
+                        <input type="checkbox" class="custom-control-input  mt-4" id="customCheck2" name="check">
+                        <input type="hidden" name="hidden" value="true">
+                        <label class="custom-control-label" for="customCheck2" style="margin-left:-100px; font-size:14px; text-align: left">Я согласен на обработку<br> <a href="./privacy-policy.html" class="text-dark">Персональных данных</a> </label>
                     </div>
-                    <button type="button" class="btn btn-primary mt-3 btn-w mb-4">ОТПРАВИТЬ</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-w mb-4" onclick="return Formdata(this.form);">ОТПРАВИТЬ</button>
                 </form>
             </div>
         </div>
@@ -892,9 +939,10 @@
                         </div>
 
                         <div id="collapseOne" class="collapse bg-white border-0"   data-parent="#accordionExample">
-                            <div class="card border-0 border-bottom2">
-                                <div class="card-header bg-white border-0  pl-5" id="heading1">
-                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headinga0">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapsea0" role="button" aria-expanded="false" aria-controls="collapsea0">
                                         <div class="col-8">
                                             СЕРТИФИКАТ СООТВЕТСТВИЯ
                                         </div>
@@ -902,29 +950,19 @@
                                             от 10 000 руб
                                         </div>
                                         <div class="col">
-                                            <img src="img/union-light.png" alt="" id="union4">
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapse4" class="collapse bg-white card-body pl-5 pt-0">
+                                <div id="collapsea0" class="collapse bg-white card-body pl-5 pt-0">
                                     <div class="row">
-                                        <div class="col-8">Оборудование</div>
-                                        <div class="col"> от 25 000 руб</div>
-                                    </div><div class="row">
-                                        <div class="col-8">Техника (бытовая, электрика)</div>
-                                        <div class="col"> от 25 000 руб</div>
-                                    </div><div class="row">
-                                        <div class="col-8">Игрушки</div>
-                                        <div class="col"> от 19 000 руб</div>
-                                    </div><div class="row">
-                                        <div class="col-8">Одежда</div>
-                                        <div class="col"> от 18 000 руб</div>
+                                        <div class="col-8">Сертификат соответствия – документ, удостоверяющий соответствие объекта требованиям технических регламентов (ТР ТС), положениям стандартов, своду правил или условиям договоров. Иными словами сертификат соответствия эффективный способ подтвердить качество своей продукции.</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card border-0 border-bottom2-h">
-                                <div class="card-header bg-white border-0 p-3 pl-5" id="heading2">
-                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headinga1">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapsea1" role="button" aria-expanded="false" aria-controls="collapsea1">
                                         <div class="col-8">
                                             ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ
                                         </div>
@@ -932,87 +970,76 @@
                                             от 6 000 руб
                                         </div>
                                         <div class="col">
-                                            <img src="img/union-light.png" alt="" id="union5">
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapse5" class="collapse bg-white card-body pl-5 pt-0">
+                                <div id="collapsea1" class="collapse bg-white card-body pl-5 pt-0">
                                     <div class="row">
-                                        <div class="col-8">Оборудование</div>
-                                        <div class="col"> от 9 500 руб</div>
+                                        <div class="col-8">Декларация соответствия ГОСТ - документ, удостоверяющий качество продукции, не подлежащей обязательной сертификации, но попавшей в перечень обязательного декларирования соответствия. То есть декларация о соответствии ГОСТ Р служит альтернативным подтверждающим документом со стороны импортера или производителя.</div>
+                                        <div class="col"></div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-8">Техника (бытовая, электрика)</div>
-                                        <div class="col"> от 9 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Мебель</div>
-                                        <div class="col"> от 10 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Одежда</div>
-                                        <div class="col"> от 8 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Упаковка</div>
-                                        <div class="col"> от 8 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Посуда</div>
-                                        <div class="col"> от 6 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Хозяйственно-бытовые товары</div>
-                                        <div class="col"> от 6 000 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Косметика</div>
-                                        <div class="col"> от 9 500 руб</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">Пищевая продукция</div>
-                                        <div class="col"> от 8 000 руб</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card border-0 border-bottom2-h">
-                                <div class="card-header bg-white p-3 pl-5 border-0" id="heading3">
-                                    <a class="row p-0 btn-link " >
-                                    <div class="col-8">
-                                        СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
-                                    </div>
-                                    <div class="col" style="font-size: 20px">
-                                        от 24 000 руб
-                                    </div>
-                                </a>
                                 </div>
                             </div>
                             <div class="card border-0 border-bottom2-h">
-                                <div class="card-header bg-white p-3 pl-5 border-0" id="heading4">
-                                    <a class="row p-0 btn-link " >
-                                    <div class="col-8">
-                                        ОТКАЗНОЕ ПИСЬМО
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headinga2">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapsea2" role="button" aria-expanded="false" aria-controls="collapsea2">
+                                        <div class="col-8">
+                                            СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 24 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapsea2" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Свидетельство о государственной регистрации продукции в Роспотребнадзоре - это документ, удостоверяющий соответствие продукции единым санитарным нормам и техническим регламентам Таможенного Союза.</div>
+                                        <div class="col"></div>
                                     </div>
-                                    <div class="col" style="font-size: 20px">
-                                        от 10 000 руб
-                                    </div>
-                                </a>
                                 </div>
                             </div>
-                            <div class="card border-0">
-                                <div class="card-header bg-white p-3 pl-5 border-0" id="heading5">
-                                    <a class="row p-0 btn-link " >
-                                    <div class="col-8">
-                                        ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headinga3">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapsea3" role="button" aria-expanded="false" aria-controls="collapsea3">
+                                        <div class="col-8">
+                                            ОТКАЗНОЕ ПИСЬМО
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 10 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapsea3" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Отказное письмо – это официальный разъяснительный документ, выданный органом по сертификации, в котором сообщается, что продукция не подлежит обязательной сертификации или декларированию соответствия</div>
+                                        <div class="col"></div>
                                     </div>
-                                    <div class="col" style="font-size: 20px">
-                                        от 15 000 руб
-                                    </div>
-                                </a>
                                 </div>
                             </div>
-
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headinga4">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapsea4" role="button" aria-expanded="false" aria-controls="collapsea4">
+                                        <div class="col-8">
+                                            ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 15 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapsea4" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Экспертное заключение Роспотребнадзора – это документ, удостоверяющий санитарно-гигиеническую и эпидемиологическую безопасность заявленной продукции.</div>
+                                        <div class="col"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -1031,66 +1058,106 @@
                             </a>
                         </div>
                         <div id="collapseTwo" class="collapse bg-white" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card border-0 border-bottom2">
-                                    <div class="card-header border-0 bg-white p-3 pl-5" >
-                                        <a class="row p-0 btn-link " >
-                                            <div class="col-8">
-                                                ISO 9001
-                                            </div>
-                                            <div class="col" style="font-size: 20px">
-                                                от 12 500 руб
-                                            </div>
-                                        </a>
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingb1">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseb1" role="button" aria-expanded="false" aria-controls="collapseb1">
+                                        <div class="col-8">
+                                            ISO 9001
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 12 500 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseb1" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Сертификат ИСО 9001 - это официальный документ, гарантирующий высокую степень надежности Вашего предприятия и качества выпускаемого товара, продукта/оказываемой услуги.</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
-                                <div class="card border-0 border-bottom2-h">
-                                    <div class="card-header border-0 bg-white p-3 pl-5" >
-                                        <a class="row p-0 btn-link " >
-                                            <div class="col-8">
-                                                ISO 14001
-                                            </div>
-                                            <div class="col" style="font-size: 20px">
-                                                от 14 000 руб
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingb2">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseb2" role="button" aria-expanded="false" aria-controls="collapseb2">
+                                        <div class="col-8">
+                                            ISO 14001
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 14 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseb2" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Сертификат ИСО 14001 - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р ИСО 14001 СЭМ «Системы экологического менеджмента».</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
-                                <div class="card border-0 border-bottom2-h">
-                                    <div class="card-header border-0 bg-white p-3 pl-5" >
-                                        <a class="row p-0 btn-link " >
-                                            <div class="col-8">
-                                                OHSAS 18001
-                                            </div>
-                                            <div class="col" style="font-size: 20px">
-                                                от 16 000 руб
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingb3">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseb3" role="button" aria-expanded="false" aria-controls="collapseb3">
+                                        <div class="col-8">
+                                            OHSAS 18001
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 16 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseb3" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Сертификат ОХСАС (OHSAS 18001) - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р 54934-2012 Системы менеджмента охраны здоровья и безопасности персонала (OHSAS 18001:2007).</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
-                                <div class="card border-0 border-bottom2-h">
-                                    <div class="card-header border-0 bg-white p-3 pl-5" >
-                                        <a class="row p-0 btn-link " >
-                                            <div class="col-8">
-                                                ISO 22000
-                                            </div>
-                                            <div class="col" style="font-size: 20px">
-                                                от 20 000 руб
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingb4">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseb4" role="button" aria-expanded="false" aria-controls="collapseb4">
+                                        <div class="col-8">
+                                            ISO 22000
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 20 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseb4" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Сертификат ИСО 22000 - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р ИСО 22000-2007 «Системы менеджмента безопасности пищевой продукции. Требования к организациям, участвующим в цепи создания пищевой продукции» ISO 22000.</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
-                                <div class="card border-0">
-                                    <div class="card-header border-0 bg-white p-3 pl-5" >
-                                        <a class="row p-0 btn-link " >
-                                            <div class="col-8">
-                                                Интегрированная система менеджмента
-                                            </div>
-                                            <div class="col" style="font-size: 20px">
-                                                от 31 000 руб
-                                            </div>
-                                        </a>
+                            </div>
+                            <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingb5">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseb5" role="button" aria-expanded="false" aria-controls="collapseb5">
+                                        <div class="col-8">
+                                            Интегрированная система менеджмента
+                                        </div>
+                                        <div class="col-3" style="font-size: 20px">
+                                            от 31 000 руб
+                                        </div>
+                                        <div class="col">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseb5" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Интегрированные системы менеджмента (ИСМ) - этот документ оформляется на организацию после прохождения процедуры сертификации на соответствие стандарту ГОСТ Р 53893-2010 «Руководящие принципы и требования к интегрированным системам менеджмента».</div>
+                                        <div class="col"></div>
                                     </div>
                                 </div>
+                            </div>
 
                         </div>
                     </div>
@@ -1110,46 +1177,43 @@
                             </a>
                         </div>
                         <div id="collapseThree" class="collapse bg-white" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card border-0 border-bottom2">
-                                <div class="card-header border-0 bg-white p-3 pl-5" >
-                                    <a class="row p-0 btn-link " >
+                                                        <div class="card border-0 border-bottom2-h">
+                                <div class="card-header bg-white border-0 p-3 pl-5" id="headingс1">
+                                    <a class="row p-0 btn-link " data-toggle="collapse" href="#collapseс1" role="button" aria-expanded="false" aria-controls="collapseс1">
                                         <div class="col-8">
-                                            Разработка технических условий
+                                            Разработка и регистрация технических условий
                                         </div>
-                                        <div class="col" style="font-size: 20px">
+                                        <div class="col-3" style="font-size: 20px">
                                             от 9 500 руб
+                                        </div>
+                                        <div class="col">
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="card border-0 border-bottom2-h">
-                                <div class="card-header border-0 bg-white p-3 pl-5" >
-                                    <a class="row p-0 btn-link " >
-                                        <div class="col-8">
-                                            Регистрация технических условий
-                                        </div>
-                                        <div class="col" style="font-size: 20px">
-                                            от 12 000 руб
-                                        </div>
-                                    </a>
+                                <div id="collapseс1" class="collapse bg-white card-body pl-5 pt-0">
+                                    <div class="row">
+                                        <div class="col-8">Технические условия - это внутренний документ организации, затрагивающий все аспекты производственного процесса и регламентирующий основные технические требования, к выпускаемой продукции. Обязательными разделами технических условий являются: основные параметры и характеристики продукции, требования к сырью, материалам, комплектность, маркировка, упаковка, требования безопасности, требования охраны окружающей среды, правила приемки, методы контроля, транспортирование и хранение, указания по эксплуатации, гарантии изготовителя. Технические условия могут разрабатываться на отдельные виды продукции, или на несколько однородных видов продукции, так называемые групповые ТУ.</div>
+                                        <div class="col"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <h3 class="color-green text-center mt-4 " style="font-size: 20px">ОСТАВИТЬ ЗАЯВКУ</h3>
-                        <form class="row justify-content-center mb-4">
+                        <form class="row justify-content-center mb-4" action="./send.php" method="post">
                             <div class="col-4">
-                                <input type="text" placeholder="Ваше имя" class="form-control mt-4 btn-w">
-                                <input type="tel" placeholder="Ваш телефон" class="form-control mt-4 btn-w">
+                                <input type="text" placeholder="Ваше имя" name="fnm" class="form-control mt-4 btn-w">
+                                <input type="tel" placeholder="Ваш телефон" name="phone" class="form-control mt-4 btn-w">
                             </div>
                             <div class="col-4">
-                                <input type="email" placeholder="Ваш e-mail" class="form-control mt-4 btn-w">
+                                <input type="email" placeholder="Ваш e-mail" name="email" class="form-control mt-4 btn-w">
+                                <input type="hidden" name="hidden" value="true">
                                 <div class="mt-4 ">
-                                    <button type="button" class="btn btn-primary w-100 py-1  btn-w">ОТПРАВИТЬ</button>
+                                    <button type="button" class="btn btn-primary w-100 py-1  btn-w" onclick="return Formdata(this.form);">ОТПРАВИТЬ</button>
                                 </div>
                                 <div class="custom-control custom-checkbox mt-2">
                                     <input type="checkbox" class="custom-control-input  mt-4" id="customCheck3">
                                     <label class="custom-control-label mb-3" for="customCheck3" style="font-size: 14px">
-                                        Я согласен на обработку <a href="#" class="text-dark">Персональных данных</a>
+                                        Я согласен на обработку <a href="./privacy-policy.html" class="text-dark">Персональных данных</a>
                                     </label>
                                 </div>
                             </div>
@@ -1176,7 +1240,7 @@
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-1">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-1" role="button" aria-expanded="false" aria-controls="collapse2-1">
                                 <div class="col-8">
-                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ЮЛ
+                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЁТА ЮЛ
                                 </div>
                                 <div class="col col-3" style="font-size: 20px">
                                     от 1 000 руб
@@ -1187,13 +1251,13 @@
                             </a>
                             <div class="row pl-3">
                                 <div id="collapse2-1" class="collapse bg-white card-body p-0  mt-2 col-7  roboto" aria-labelledby="heading2-1" data-parent="#accordion-buh">
-                                    Наша компания оказывает полный комплекс услуг в области бухгалтерского учета, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчетности. Мы практикуем индивидуальный подход к каждому клиенту.
+                                    Наша компания оказывает полный комплекс услуг в области бухгалтерского учёта, начиная от обработки первичной документации до составления налоговой и бухгалтерской отчётности. Мы практикуем индивидуальный подход к каждому клиенту.
                                 </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-2">
                             <a class="row p-0 btn-link "  data-toggle="collapse" href="#collapse2-2" role="button" aria-expanded="false" aria-controls="collapse2-2">
                                 <div class="col-8">
-                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЕТА ИП
+                                    ВЕДЕНИЕ БУХГАЛТЕРСКОГО И НАЛОГОВОГО УЧЁТА ИП
                                 </div>
                                 <div class="col col-3" style="font-size: 20px">
                                     от 500 руб
@@ -1204,13 +1268,13 @@
                             </a>
                             <div class="row pl-3">
                                 <div id="collapse2-2" class="collapse bg-white card-body p-0  mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                    Согласно российскому законодательству индивидуальные предприниматели не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учета значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учета позволяет индивидуальному предпринимателю оценить состояние своего бизнеса и определить уровень его доходности. И наша компания с удовольствием поможет вам в этом.
+                                    Согласно российскому законодательству индивидуальные предприниматели не обязаны вести бухгалтерский и налоговый учет, но тем не менее они должны рассчитывать налоги и сдавать отчетность в налоговые органы и внебюджетные фонды. В такой ситуации ведение бухгалтерского и налогового учёта значительно упрощает поставленную задачу. Кроме того ведение бухгалтерского учёта позволяет индивидуальному предпринимателю оценить состояние своего бизнеса и определить уровень его доходности. И наша компания с удовольствием поможет вам в этом.
                                 </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-3">
                             <a class="row p-0 btn-link " data-toggle="collapse" href="#collapse2-3" role="button" aria-expanded="false" aria-controls="collapse2-3" >
                                 <div class="col-8">
-                                    СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЕТНОСТИ
+                                    СОСТАВЛЕНИЕ И ОТПРАВКА ОТЧЁТНОСТЬ
                                 </div>
                                 <div class="col col-3" style="font-size: 20px">
                                     от 200 руб
@@ -1221,7 +1285,7 @@
                             </a>
                             <div class="row pl-3">
                                 <div id="collapse2-3" class="collapse bg-white card-body mt-2 col-7 p-0 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                    Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчетов, сформировать и отправить налоговые декларации в установленные сроки.
+                                    Главным критерием, по которому налоговые органы оценивают работу организаций и индивидуальных предпринимателей, это налоговая и бухгалтерская отчетность. Наша команда поможет разобраться в сложной системе отчётов, сформировать и отправить налоговые декларации в установленные сроки.
                                 </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-4">
@@ -1238,7 +1302,7 @@
                             </a>
                             <div class="row pl-3">
                                 <div id="collapse2-4" class="collapse bg-white card-body p-0 mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                    Наша команда готова оказывать помощь не только уже действующим организациям и ИП, но и только планирующим создать свой бизнес. В комплекс услуг по регистрации входит: помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учета.
+                                    Наша команда готова оказывать помощь не только уже действующим организациям и ИП, но и только планирующим создать свой бизнес. В комплекс услуг по регистрации входит: помощь в оформлении документов, подбор кодов видов деятельности, регистрация ООО и ИП в налоговом органе, первичная консультация по выбору оптимальной системы налогообложения и ведению учёта.
                                 </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-5">
@@ -1255,8 +1319,8 @@
                             </a>
                             <div class="row pl-3">
                                 <div id="collapse2-5" class="collapse bg-white card-body p-0 mt-2  col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                    Если в вашей организации в течение определенного времени не велся бухгалтерский учет или велся неправильно и неполноценно, наша команда предлагает вам воспользоваться услугой восстановления бухгалтерского учета.<br>
-                                    В процесс восстановления бухгалтерского учета входит анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учета в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчеты.
+                                    Если в вашей организации в течение определённого времени не велся бухгалтерский учет или велся неправильно и неполноценно, наша команда предлагает вам воспользоваться услугой восстановления бухгалтерского учёта.<br>
+                                    В процесс восстановления бухгалтерского учёта входит анализ первичной документации, восстановление и обработка недостающих документов, постановка бухгалтерского учёта в соответствии с действующим законодательством, проверка правильности исчисления налогов и внесение корректировок (при необходимости) в уже сданные налоговые и бухгалтерские отчёты.
                                 </div></div>
                         </div>
                         <div class="card-header bg-white p-3 pl-5 border-bottom2-h" id="heading2-6">
@@ -1273,25 +1337,26 @@
                             </a>
                             <div class="row pl-3">
                             <div id="collapse2-6" class="collapse bg-white card-body p-0 mt-2 col-7 roboto" aria-labelledby="heading2-2" data-parent="#accordion-buh">
-                                С того момента как организация или индивидуальный предприниматель начинает использовать наемный труд работников, возникает необходимость ведения кадрового учета. Ведение кадрового учета предполагает систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет, зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
+                                С того момента как организация или индивидуальный предприниматель начинает использовать наемный труд работников, возникает необходимость ведения кадрового учёта. Ведение кадрового учёта предполагает систематическое формирование, накопление, учет и хранение документов, связанных с трудовой деятельностью персонала. От того, насколько грамотно организован и ведется кадровый учет, зависит правильность начисления заработной платы, и, как следствие, налоговая нагрузка работодателя по оплате труда.
                             </div></div>
                         </div>
                     </div>
                     <h3 class="color-green text-center mt-4 " style="font-size: 20px">ОСТАВИТЬ ЗАЯВКУ</h3>
-                    <form class="row justify-content-center mb-4">
+                    <form class="row justify-content-center mb-4" action="./send.php" method="post">
                         <div class="col-4">
-                            <input type="text" placeholder="Ваше имя" class="form-control mt-4 btn-w">
-                            <input type="tel" placeholder="Ваш телефон" class="form-control mt-4 btn-w">
+                            <input type="text" placeholder="Ваше имя" name="fnm" class="form-control mt-4 btn-w">
+                            <input type="tel" placeholder="Ваш телефон" name="phone" class="form-control mt-4 btn-w">
                         </div>
                         <div class="col-4">
-                            <input type="email" placeholder="Ваш e-mail" class="form-control mt-4 btn-w">
+                            <input type="email" placeholder="Ваш e-mail" name="email" class="form-control mt-4 btn-w">
+                            <input type="hidden" name="hidden" value="true">
                             <div class="mt-4">
-                                <button type="button" class="btn btn-primary w-100 py-1  btn-w" >ОТПРАВИТЬ</button>
+                                <button type="button" class="btn btn-primary w-100 py-1  btn-w" onclick="return Formdata(this.form);">ОТПРАВИТЬ</button>
                             </div>
                             <div class="custom-control custom-checkbox mt-2">
                                 <input type="checkbox" class="custom-control-input  mt-4" id="customCheck4">
                                 <label class="custom-control-label mb-3" for="customCheck4" style="font-size: 14px">
-                                    Я согласен на обработку <a href="#" class="text-dark">Персональных данных</a>
+                                    Я согласен на обработку <a href="./privacy-policy.html" class="text-dark">Персональных данных</a>
                                 </label>
                                 <a href="#"></a>
                             </div>
@@ -1307,6 +1372,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
+        (function() {
+
+            "use strict";
+
+            var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+            for (var i = toggles.length - 1; i >= 0; i--) {
+                var toggle = toggles[i];
+                toggleHandler(toggle);
+            };
+
+            function toggleHandler(toggle) {
+                toggle.addEventListener( "click", function(e) {
+                    e.preventDefault();
+                    (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+                });
+            }
+
+        })();
         function stratification(a){
             switch (a) {
                 case 1:
@@ -1415,5 +1499,60 @@
             document.getElementById('union1').className='rotate';
         });
     </script>
+
+        <script>
+            /**
+             * @return {boolean}
+             */
+            function Formdata(data){
+                    /* если не заполнено поле Ваше имя, длина менее 3-x*/
+                    if (data.fnm != null && data.fnm.value.length < 3 )
+                    {
+                    alert('Заполните поле «Ваше имя»');
+                    return false;}
+                    /* контактный телефон */
+                    if(data.phone != null && data.phone.value.length == 0)
+                    {
+                    alert('поле «Контактный телефон» пустое');
+                    return false;}
+
+                    if(data.phone != null && data.phone.value.length < 5)
+                    {
+                    alert('поле «Контактный телефон» должно содержать минимум пять символов');
+                    return false;}
+
+                    if(!(/^[0-9-+()s]+z/.test(data.phone.value+'z')))
+                    {
+                    alert('«Контактный телефон» указан неверно');
+                    return false;}
+
+                    /* если не заполнено поле Сообщение */
+
+
+                    /* e-mail Юзера */
+                    if(data.email != null && data.email.value.length === 0)
+                    {
+                    alert('поле «E-Mail» пустое');
+                    return false;}
+
+                    if(data.email != null && data.email.value.length < 6)
+                    {
+                    alert('слишком короткий «E-Mail»');
+                    return false;}
+
+                    if(!(/^\w+[-_\.]*\w+@\w+-?\w+\.[a-z]{2,4}$/.test(data.email.value)) )
+                    {
+                    alert('«Введите правильный E-Mail адрес»');
+                    return false;}
+                    if(!data.check.checked){
+                        alert('Необходимо согласие на обработку персональных данных');
+                        return false;
+                    }
+                    if (data.comment != null && data.comment.value.length < 3)
+                {
+                    alert('Заполните поле «Ваш вопрос»');
+                    return false;}
+            }
+        </script>
     </body>
 </html>
