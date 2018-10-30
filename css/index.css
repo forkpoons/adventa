@@ -336,8 +336,15 @@ li{
 .border-bottom2-h{
     border-bottom: 1px solid #ddd !important;
 }
+.border-bottom2-h:first-child{
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+}
 .border-bottom2-t{
-    border-bottom: 0 !important;
+    border-bottom: 0;
+}
+.border-bottom2-t.last{
+    border-bottom: 1px solid #999 !important;
 }
 .rad-20-top.border-bottom2-t{
     border-radius: 19px 19px 0 0 !important;
@@ -378,7 +385,7 @@ li{
     top: 25px;
     left: 21px;
     right: 15px;
-    height: 3px;
+    height: 2px;
     background: white;
 }
 
@@ -389,7 +396,7 @@ li{
     display: block;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: #fff;
     content: "";
 }
@@ -458,11 +465,14 @@ li{
     -webkit-transition-delay: 0s, 0.3s;
     transition-delay: 0s, 0.3s;
 }
-.modal .custom-control-label{
-    margin-left: -100px;
+
+.servis-m .card-header{
+    border-bottom: 0;
 }
 
-
+.disp-none-foot {
+    display: none;
+}
 @media (min-width: 992px) {
     .buh .modal-dialog {min-width: 950px;}
 }
@@ -560,7 +570,7 @@ li{
         background-position-y: 50px;
     }
     .modal .btn-w{
-        width: 200px;
+        width: 100%;
     }
     .px-main{
         padding-top:90px;padding-bottom:90px;
@@ -574,11 +584,17 @@ li{
     .px-main{
         padding-top:60px;padding-bottom:60px;
     }
+    .px-main.servis-m{
+        padding-top:60px;padding-bottom:0px!important;
+    }
     .hero404{
         margin-top: 20%;
     }
     .disp-none{
         display: none;
+    }
+    .disp-none-foot{
+        display: inline-block;
     }
     .disp-m h5{
         font-size:18px;
@@ -593,7 +609,7 @@ li{
         font-size: 30px;
     }
     .hero p{
-        font-size:12px
+        font-size:14px
     }
     .hero h3{
         font-size: 20px;
@@ -626,16 +642,29 @@ li{
     .mb-40{
         margin-bottom: 40px;
     }
+    h2{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 16px !important;
+    }
+    body{
+        font-size: 14px;
+    }
+    .hero h3{
+        margin-top:40px;
+
+    }
 }
 @media (max-width: 500px){
     .hero h1{
         font-size: 20px;
     }
     .hero p{
-        font-size:10px
+        font-size:14px
     }
     .hero h3{
-        font-size: 15px;
+        font-size: 14px;
     }
     .footer .btn-primary{
         font-size: 14px !important;
@@ -644,7 +673,7 @@ li{
         height: 320px;
     }
     .btn-w{
-        width: 100%;
+        width: 90%;
     }
     .modal .custom-control-label{
         margin-left: 0;
